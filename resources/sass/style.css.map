@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,AAAA,UAAU,CAAC;EACP,cAAc,EAAE,SAAS;CAAG",
+    "sources": [
+        "style.sass",
+        "0.base/_classes.sass"
+    ],
+    "names": [],
+    "file": "style.css"
+}
