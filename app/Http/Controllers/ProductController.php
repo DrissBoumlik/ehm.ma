@@ -14,8 +14,10 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $products = collect(Product::all())->groupBy('city');
-        return view('products.index', ['products' => $products]);
+        $products = Product::all();
+        $cities = collect($products)->pluck('city')->unique();
+        // dd($products[0]);
+        return view('products.index', ['products' => $products, 'cities' => $cities]);
     }
 
     /**
