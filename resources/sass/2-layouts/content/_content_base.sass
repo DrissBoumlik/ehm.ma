@@ -1,0 +1,60 @@
+
+.container-fluid
+    .container
+        padding: 30px 10px 30px 10px
+    // text-align: center
+    .blog-main
+        padding: 0
+        // padding-top: 30px
+        > header h1
+            font-size: 3rem
+            background-image: url(images/patterns/brushed-alum-dark.png)
+            padding: 30px 20px
+            border-radius: 5px
+            border-top: 5px #999 solid
+
+.row-eq-height
+    display: flex
+.row-eq-height > div
+    display: flex
+    align-items: center
+    justify-content: center
+
+.row
+        // padding: 0 0 10px
+        margin: 0
+
+h1, h2, h3
+    margin: 0
+
+.container-fluid h2, .container-fluid h3, .container-fluid p
+    margin-bottom: 10px
+
+.tutos, .projects
+    .row
+        padding: 0 0 10px
+    .box
+        position: relative
+        overflow: hidden
+        .wrapper
+            transition: transform 0.3s ease-in-out  
+        &:hover .wrapper
+            // transform: scale(1.1)
+            
+    .box.box-front
+        // z-index: 99
+
+.projects .box:hover .wrapper
+        // animation: spin 0.3s ease-in-out
+        +animation(spin, 0.3s, ease-in-out)
+
+.posts, .tutos, .projects, .resources
+    padding: 0!important
+
+// .pp
+//     font-size: 1.5rem
+//     background-image: url(images/patterns/brushed-alum-dark.png)
+//     padding-left: 20px!important
+//     padding-right: 20px!important
+//     padding-bottom: 20px!important
+//     box-shadow: 3px 3px 5px rgba(37, 37, 38, 0.3)

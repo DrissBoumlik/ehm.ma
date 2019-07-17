@@ -1,0 +1,173 @@
+// .posts .post
+//     transition: all .3s ease
+//     transform: translate(0, 0)
+//     &:hover
+//         box-shadow: 5px 5px 5px rgba(37, 37, 38, 0.3)
+//         transform: translate(-5px, -5px)
+.posts, .post-container
+    .blog-main
+        // padding: 0 30px 0 0
+        padding-top: 0
+        .post-header
+            h2, h3
+                margin-bottom: 10px!important
+    .post
+        position: relative
+    // .post + .post, .post-nav
+        // padding-top: 30px
+        // border-top: dotted 5px #999
+    // .post:before
+    //     background-size: 90px 100%
+    //     // background-image: linear-gradient(to left, transparent 50%, #1DA1F2 50%)
+    //     background-color: #1DA1F2
+    //     content: ""
+    //     position: absolute
+    //     bottom: 0
+    //     left: 0
+    //     width: 70%
+    //     height: 3px
+    //     left: 50%
+    //     transform: translateX(-50%)
+    .post
+        // padding-bottom: 30px
+        margin-bottom: 20px
+        border: 1px solid #ddd
+        background-color: rgba(221, 221, 221, 0.1)
+        border-radius: 5px 5px 0 0
+        //TESTING:
+        .post-txt p.pages-nav
+            font-family: $my-epic-selfie
+            a
+                color: white
+                background-color: $nice-blue
+                border-radius: 50%
+                width: 25px
+                height: 25px
+                line-height: 25px
+                display: inline-block
+                text-align: center
+            .tags
+                // width: 65%
+                display: inline-block
+                a
+                    color: #aaa
+                    margin: 0 5px
+                    display: inline-block
+        //TESTING:
+        .post-header
+            h2
+                font-size: 3rem
+                margin-top: 0!important
+            h3
+                margin-top: 0
+                font-size: 2rem
+        .comments-count-container
+            padding-right: 0
+            .comments-count
+                float: right
+                border-radius: 10px
+                background-color: $nice-blue
+                color: $light
+                height: 80px
+                width: 80px
+                text-align: center
+                display: table
+                transition: transform 0.1s ease-in-out
+                &:hover
+                    transform: scale(1.1)
+                cite
+                    display: table-cell
+                    vertical-align: middle
+                    font-size: 2.1rem
+                    font-weight: bold
+                    small
+                        display: block
+                        font-size: 1.2rem
+        .post-img
+            margin-bottom: 15px
+            margin-top: 20px
+            img
+                width: 100%
+        .post-txt
+            font-size: 2rem
+            font-weight: 400
+        .tags
+            // width: 65%
+            padding-left: 0
+            display: inline-block
+            a
+                color: #aaa
+                margin: 0 5px 0 0
+                display: inline-block
+        .read-more
+            padding-right: 0
+    .post .read-more a, .post-nav span.btn-nav
+        position: relative
+        border-radius: 3px
+        font-weight: normal
+        font-size: 14px
+        font-style: italic
+        color: #fff!important
+        background-color: #c1c6cb
+        text-transform: uppercase
+        box-shadow: 0 5px 0 #555555
+        &:hover
+            background-color: #b3b9bf
+        &:active
+            top: 4px
+            box-shadow: 0 1px 0 #0b161e
+
+.posts .post
+    padding: 25px 15px 20px
+.post-container .post
+    padding: 25px 15px 0
+.post-nav
+    .post-nav-dir
+        span.btn-nav
+            padding: 0
+            a
+                padding: 10px 16px
+                color: #fff
+                display: block
+                position: relative
+            &:hover span.post-title-fade
+                z-index: 1
+                opacity: 1
+                &:before
+                    content: ""
+                    border: medium solid $light-blue
+                    border-color: transparent transparent $light-blue transparent
+                    border-width: 0 5px 5px 5px
+                    position: absolute
+                    top: -4px
+                    left: 50%
+                    transform: translateX(-50%)
+        &.post-nav-prev i
+            position: absolute
+            left: 10%
+        &.post-nav-next i
+            position: absolute
+            right: 10%
+
+    .post-nav-dir
+        // display: inline-block
+    .post-nav-prev
+        padding-left: 0!important
+    .post-nav-next
+        // float: right
+        padding-right: 0!important
+
+    span.post-title-fade
+        position: absolute
+        left: 50%
+        transform: translate(-50%, 10px)
+        background-color: $light-blue
+        padding: 8px 10px 5px
+        border-radius: 5px
+        width: 100%
+        white-space: normal
+        opacity: 0
+        z-index: -1
+        transition: opacity .3s ease
+        // &.right
+        //     transform: translate(-50%, 30%)

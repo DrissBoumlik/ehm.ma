@@ -1,0 +1,104 @@
+// FOOTER STYLES
+.page-footer
+    // overflow: hidden
+    position: relative
+    // border-top: 3px double #000
+    background-color: #222
+    color: $light
+    font-size: 2rem
+    i
+        font-size: 1.6rem
+    // *
+    //     color: #fff!important
+    .container-fluid
+        padding: 0 15px
+    // &:before, &:after
+    //     content: ""
+    //     position: absolute
+    //     width: 100%
+    //     height: 3px
+    //     // filter: blur(1px)
+    //     // background-image: url('images/patterns/by.png')
+    // &:after
+    //     content: ""
+    //     bottom: 0
+        // background-image: url('images/patterns/by.png')
+    // background: $light
+    .container-fluid
+        .container
+            // padding: 10px 0 10px 0
+            padding: 10px 0
+            .row
+                padding: 0
+    .row-eq-height > div:first-child
+        justify-content: flex-start
+    .row-eq-height > div:last-child
+        justify-content: flex-end
+
+    .copyright-txt
+        // padding-top: 5px
+        p
+            margin: 0
+    .owner i.fa-heart
+            color: #FF5050
+    .contact-txt
+        margin-right: 10px
+    .social-icons
+        .list-inline-item img
+            height: 30px
+            width: 30px
+            border-radius: 5px
+
+    strong
+        margin: 0 5px
+    .list-inline
+        // margin-top: -5px
+        margin-bottom: 0
+        padding-bottom: 0
+        li
+            font-size: 1.5rem
+            margin-bottom: 0
+            position: relative
+            &:before, &:after
+                content: ""
+                position: absolute
+                opacity: 0
+                transition: opacity 0.5s ease
+            &:hover:before
+                transform: rotate(-90deg)
+                width: 100px
+                color: $light
+                background-color: $nice-blue
+                left: -35px
+                top: -75px
+                padding: 3px 5px
+                border-radius: 5px
+                opacity: 1
+            &:hover:after
+                width: 0
+                border: medium solid #fff
+                border-color: #fff transparent transparent transparent
+                border-width: 5px 5px 0 5px
+                top: -7px
+                left: 10px
+                opacity: 1
+            
+        // .fa-facebook-square
+        //     color:  #4267B2
+        // .fa-instagram
+        //     color: #3f729b
+        // .fa-twitter-square
+        //     color: #1DA1F2
+        // .fa-youtube-square
+        //     color: #FF0000
+        // i
+        //     font-size: 4rem
+        &:hover img //i
+            // animation: spin 0.5s ease
+            +animation(spin, 0.5s, $count: 1)
+
+// .page-footer
+//     position: fixed
+//     bottom: 0
+//     width: 100%
+//     z-index: 1

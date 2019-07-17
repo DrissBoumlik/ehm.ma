@@ -1,0 +1,90 @@
+// HEADER STYLES
+// Google Fonts 
+@import url('https://fonts.googleapis.com/css?family=Londrina+Shadow|Londrina+Sketch|Istok+Web')
+
+nav
+    text-align: center
+    .container, .container-fluid
+        padding: 0
+    .navbar-toggle
+        margin-top: 18px
+    // li a
+        // border-radius: 5px
+    li.active a
+        background-color: #404040!important
+.navbar
+    font-size: 2rem
+    padding: 10px 0
+    height: 70px
+    .navbar-brand
+        margin-left: 0!important
+    .navbar-right
+        margin-right: 0
+
+    a
+        position: relative
+        padding: 0
+        text-transform: uppercase
+        font-size: 18px
+        font-weight: 700
+        //----------------------------- Custom Info bulle for image site
+    // a.navbar-brand:before
+    //     opacity: 0
+    //     z-index: -1 
+    //     content: "Turning atay into code"
+    //     position: absolute
+    //     text-transform: capitalize
+    //     top: calc(100% + 15px)
+    //     left: 0
+    //     width: 210px
+    //     padding: 5px
+    //     background: #FAFAFA
+    //     color: #1f1f1f
+    //     border-radius: 5px
+    //     border: 1px #1f1f1f solid
+    //     transition: opacity 0.5s
+    // a.navbar-brand:hover:before
+    //     opacity: 1
+    //     z-index: 1 
+    a.navbar-brand:after
+        content: ""
+        position: absolute
+    img
+        height: 140%
+        position: relative
+        top: -20%
+        transform: rotateZ(-45deg) scale(1.1)
+        transition: transform .3s ease
+        &:hover
+            transform: translateX(5%) rotateZ(0deg) scale(1.2)
+
+// header .progress
+//     margin-bottom: 0!important
+//     margin-top: 10px
+//     border-radius: 0
+//     height: 10px!important
+//     background-color: #dc3545!important
+//     background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent)
+//     background-size: 40px 40px
+//     .progress-bar
+//         background-color: #17a2b8
+
+header 
+    .navbar
+        border-radius: 0!important
+        margin-bottom: 0
+    // .fixed-top
+    //     top: 70px
+    //     z-index: 2
+    //     position: fixed
+    //     width: 100%
+    .progress
+        margin-bottom: 0!important
+        border-radius: 0
+        height: 10px
+        // transition: height 1s ease
+        background-color: #D9D3D3//#28a745!important//#dc3545!important
+        background-image: linear-gradient(45deg,rgba(255,255,255,.9) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.9) 50%,rgba(255,255,255,.9) 75%,transparent 75%,transparent)
+        background-size: 40px 40px
+
+        

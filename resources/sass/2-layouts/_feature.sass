@@ -1,0 +1,262 @@
+// FEATURE STYLES
+
+.feature
+    // background-image: url('images/headline/bg-feature.jpg') //url('images/headline/feature_bg.png')
+    // background-repeat: no-repeat
+    // background-size: cover
+    // background-position: center center
+    text-align: center
+    // background: $bg-row
+    padding: 150px 0
+    position: relative
+    overflow: hidden
+    height: 510px
+    // .row > div
+    //     position: static
+    // .container, .row, .col-md-12
+    //     height: 100%
+    .slides-img
+        transform: scale(1)
+        transition: transform 0.5s ease
+        position: absolute
+        left: 0
+        right: 0
+        top: 0
+        bottom: 0
+    &:hover .slides-img
+        transform: scale(1.2)
+    .feature-img
+        // background: #000
+        // background-image: url('../images/headline/bg-feature.jpg') //url('images/headline/feature_bg.png')
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center center
+        background-attachment: fixed
+        // filter: blur(5px)
+        position: absolute
+        height: 100%
+        width: 100%
+        transition: transform 1s ease
+        // &:nth-child(2)
+        //     background-image: url('images/headline/bg-feature2.jpg')
+        // &:nth-child(3)
+        //     background-image: url('images/headline/bg-feature3.jpg')
+
+    .slides-txt
+        position: absolute
+        top: 0
+        left: 0
+        height: 100%
+        width: 100%
+    .extra
+        position: absolute
+        width: 80%
+        left: 50%
+        top: 50%
+        transform: translate(-50%,-50%)
+    .feature-txt, .feature-txt-img
+        font-size: 3rem
+        // line-height: 60px
+        color: #fff
+        transition: left .8s ease
+        h1
+            display: inline-block
+            position: relative
+            font-size: 5rem
+            // line-height: 60px
+            font-weight: 700
+            margin-bottom: 20px
+        p
+            display: inline-block
+            // line-height: 40px
+            height: 100%
+            position: relative
+            font-family: $font-feature-desc
+
+    ._bounce_#{$bounce-value}, ._bounce_reverse_#{$bounce-value}
+        // border-radius: 10px
+        position: relative
+        transition: top 1s
+        top: 0
+    // ._bounce_20
+    //     +animation(_bounce, 1s, $count: infinite)
+    // ._bounce_reverse_20
+    //     +animation(_bounce_reverse, 1s, $count: infinite)
+    ._bounce_#{$bounce-value}
+        +bouncing(_bounce_#{$bounce-value}, #{$bounce-value}px, 1s, $_count: infinite)
+    ._bounce_reverse_#{$bounce-value}
+        +bouncing_reverse(_bounce_reverse_#{$bounce-value}, #{$bounce-value}px, 1s, $_count: infinite)
+
+    .middle-img
+        height: auto
+        // margin-top: -100px
+        // margin-bottom: 40px
+        z-index: 1
+        position: relative
+        img
+            border-radius: 50%
+            width: 170px
+
+    .typed-bar
+        margin-left: 10px
+        animation: fade-in-out 1s ease infinite
+
+
+
+    .feature-img.active
+        transform: translateX(0)
+    .feature-img.inactive-right
+        transform: translateX(100%)
+    .feature-img.inactive-left
+        transform: translateX(-100%)
+
+    .z-index-p1
+        z-index: 1
+    .z-index-0
+        z-index: 0
+    .z-index-m1
+        z-index: -1
+    .z-index-m2
+        z-index: -2
+    .z-index-m3
+        z-index: -3
+    .z-index-m4
+        z-index: -4
+    .z-index-m5
+        z-index: -5
+    .z-index-m10
+        z-index: -10
+
+    .feature-txt.active
+        left: 50%
+    .feature-txt.inactive-right
+        left: 200%
+    .feature-txt.inactive-left
+        left: -200%
+
+    // .btn-nav-container .btn-nav
+    //     font-size: 3rem
+    //     position: absolute
+    //     top: 50%
+    //     transform: translateY(-50%)
+    //     border-radius: 50%
+    //     width: 50px
+    //     height: 50px
+    //     cursor: pointer
+    //     border: $light 2px solid
+    //     opacity: .5
+    //     background-color: rgba($light, .1)
+    //     transition: background-color .3s ease, opacity .3s ease
+    //     &:hover
+    //         opacity: 1
+    //         background-color: $light
+    //     &.left
+    //         left: 20px
+    //     &.right
+    //         right: 20px
+    //     i
+    //         top: 50%
+    //         left: 50%
+    //         transform: translate(-50%, -50%)
+    //         position: absolute
+
+    .btn-index-container
+        position: absolute
+        bottom: 5%
+        left: 50%
+        transform: translateX(-50%)
+        color: #fff
+        .btn-index
+            cursor: pointer
+            font-size: 1.5rem
+            margin: 0 2px
+
+        .btn-nav
+            display: inline-block
+            font-size: 3rem
+            position: relative
+            top: 5px
+            cursor: pointer
+            &.left
+                margin-right: 10px
+            &.right
+                margin-left: 10px
+
+.feature
+    padding: 0
+    ._container, .carousel-container, .row, .carousel, .carousel-inner
+        height: 100%
+    .item
+        height: 100%
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center center
+        background-attachment: fixed
+        // &:nth-child(1)
+        //     background-image: url('images/headline/bg-feature.jpg')
+        // &:nth-child(2)
+        //     background-image: url('images/headline/bg-feature2.jpg')
+        // &:nth-child(3)
+        //     background-image: url('images/headline/bg-feature3.jpg')
+        // &:nth-child(4)
+        //     background-image: url('images/headline/bg-feature1.jpg')
+
+    .feature-txt
+        h1, p
+            display: inline-block
+        h1
+            position: relative
+            font-size: 5rem
+            // line-height: 60px
+            font-weight: 700
+            margin-bottom: 20px
+        p
+            display: inline-block
+            // line-height: 40px
+            position: relative
+            font-family: $font-feature-desc
+    .carousel-indicators
+        bottom: 5%
+        li
+            border-color: $light
+            width: 50px
+            margin: 0
+            &.active
+                height: 10px
+                background-color: $light
+    .carousel-control
+        background-image: none
+        top: 50%
+        display: inline-block
+        left: 2%
+        width: 30px
+        height: 30px
+        z-index: 1
+        &.right
+            right: 2%
+            left: unset
+
+    .static-txt
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+
+    .feature-txt
+        position: absolute!important
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        width: 80%
+        display: inline-block
+        h1.small, p.bg-dark-lighter
+            padding: 5px
+
+
+    .middle-img
+        height: auto
+        position: relative
+        top: 15%
+    .feature-txt-img
+        position: relative
+        top: 20%

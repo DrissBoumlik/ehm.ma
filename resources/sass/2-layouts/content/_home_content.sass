@@ -1,0 +1,211 @@
+// HOME PAGE
+
+.bg-pattern
+    background-image: url('images/patterns/paven_row.png')
+    *:not(i)
+        color: $light!important
+.bg-wpattern
+    // background-image: url('images/patterns/gplay.png')
+    background-image: none
+    *:not(i)
+        color: $dark!important
+
+
+.container-fluid
+    padding:  0
+.content
+    .container
+        // margin-top: 20px
+        font-size: 3rem
+        text-align: center
+        padding: 30px 0
+        .row
+            padding-top: 30px
+            padding-bottom: 15px
+        // .content-section
+        //     opacity: 0
+        //     transform: translateX(-50px)
+        //     transition: all 0.5s ease-in-out
+        //     &:nth-child(2)
+        //         transform: translate(0px, 50px)
+        //     &:nth-child(3)
+        //         transform: translateX(50px)
+        // .content-section.is-showing
+        //     opacity: 1
+        //     transform: translate(0px, 0) rotate(0deg)
+        a
+            display: inline-block
+            text-decoration: none
+            color: $color-base
+        .content-img
+            margin-bottom: 20px
+            i
+                font-size: 10rem
+                // transition: transform 0.5s ease
+                &:hover
+                    // animation: spin 0.5s ease
+                    +animation(spin, 0.5s)
+                    // transform: scale(1.2) rotate(360deg)
+        div:nth-child(1) .content-img i
+            color: #ff2222
+        div:nth-child(2) .content-img i
+            color: #00437d
+        div:nth-child(3) .content-img i
+            color: #929292
+            // img
+            //     height: 150px
+            //     transition: transform 5s ease
+                // &:hover
+                //     transform: scale(1.2) rotate(360deg)
+
+.skillshare-course
+    video
+        width: 100%
+        border-radius: 5px
+        border: 5px solid #c1c6cb
+    .row:first-child h2
+        margin-bottom: 20px
+        // color: $light
+        i  
+            font-size: 2rem
+    .row.text-center:nth-child(3) h2
+        margin-top: 20px
+        margin-bottom: 0
+
+.latest-post
+    color: #fff
+    // background-image: url('images/patterns/paven_row.png')
+    .container
+        // padding: 10px 0
+    .row
+        padding: 0
+    .text-center
+        margin-bottom: 20px
+    .latest-post-img
+        text-align: center
+        img
+            width: 100%
+    .latest-post-header
+        a
+            color: #fff
+            text-decoration: none
+        h2
+            margin-top: 0
+            font-size: 2.5rem
+        h3
+            font-size: 2rem!important
+    .latest-post-txt
+        font-size: 1.7rem
+
+.people-say
+    // background-image: url('images/patterns/paven_row20.png')
+    .container
+        // padding: 30px 0
+    .row
+        padding: 0
+    // Carousel
+    .people-say-carousel //#quote-carousel 
+        padding: 0 10px 30px 10px
+        margin-top: 30px
+
+        .carousel-control // Control buttons  
+            background: none
+            color: #222
+            font-size: 2.3em
+            text-shadow: none
+            margin-top: 30px
+            width: 10%
+            a
+                color: #333
+
+        .carousel-control.left // Previous button  
+            left: -12px
+
+        .carousel-control.right // Next button  
+            right: -12px !important
+
+        .carousel-indicators // Changes the position of the indicators 
+            right: 50%
+            top: auto
+            bottom: 0
+            margin-right: -19px
+
+            li // Changes the color of the indicators 
+                background-color: #c0c0c0
+                &.active
+                    position: relative
+                    background-color: #333
+                    top: -1px
+        img
+            width: 100px
+            height: 100px
+
+        .item blockquote
+            border-left: none
+            margin: 0
+
+        .item blockquote img
+            margin-bottom: 10px
+
+        .item blockquote p:before
+            content: "\f10d"
+            font-family: 'Fontawesome'
+            float: left
+            margin-right: 10px
+    // End carousel
+
+.about-me.hidden
+    // display: none
+    text-align: center
+    font-size: 3rem
+    .row
+        color: #fff
+        // padding-bottom: 30px
+        .about-img img
+            border-radius: 50%
+            width: 100px
+        .about-txt
+            font-family: $font-about-me2
+            text-align: left
+            p:hover i
+                // animation: jump 0.5s ease
+                +animation(jump, 0.5s)
+        div
+            line-height: 6rem
+
+.about-me
+    // background-image: url('images/patterns/paven_row.png')
+    color: $light
+    // text-align: center
+    font-size: 2.5rem
+    .row > div
+        display: block
+        // color: #fff
+        // padding-bottom: 30px
+    .row
+        .about-img
+            display: flex
+            align-items: center
+            justify-content: center
+            img
+                border-radius: 50%
+                width: 150px
+                &:hover
+                    // animation: jump 0.5s ease
+                    +animation(jump, 0.5s)
+        h2
+            // text-align: center
+            margin-bottom: 10px
+        .about-txt
+            font-family: $font-about-me2
+            // text-align: left
+            p
+                margin-bottom: 0
+            &:hover i
+                +animation(jump, 0.5s)
+            i
+                margin: 0 5px
+                font-size: 1.7rem!important
+        div
+            line-height: 6rem
+

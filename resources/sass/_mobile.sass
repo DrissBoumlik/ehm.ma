@@ -1,0 +1,644 @@
+//MOBILE STYLE 1250px =========================================================================
+@media screen and (max-width: 1250px)
+    .container-fluid .container
+        padding: 30px 10px 30px 10px
+    .posts, .post-container, .post
+        // padding: 30px 0
+        .blog-main
+            // padding: 0
+            // padding-top: 30px
+    .tutos .tuto-title p
+            font-size: 2rem
+
+//MOBILE STYLE 1000px =========================================================================
+@media screen and (max-width: 1000px)
+
+    .container-fluid .container
+        padding: 30px 15px
+        width: 100%
+    .row-eq-height
+        // display: block
+        div
+            display: block
+
+    .content
+        .container
+            margin: 0
+        .row
+            padding: 0
+        a
+            // margin-bottom: 10px
+        .row > div
+            float: left
+            width: 33.33%
+        .row > div:nth-last-child(1) a
+            margin-bottom: 0
+
+    .latest-post > .row > div:first-child //post-img
+        // display: none
+    .latest-post
+        // text-align: center
+        // .latest-post-img
+        //     text-align: center
+        //     img
+        //         width: 60%
+        .latest-post-txt p
+            font-size: 1.7rem
+            // margin: 0
+
+    .about-me
+        padding: 0 50px
+        .row
+            padding: 0
+        .row-eq-height
+            margin-top: 15px
+            // display: block
+            h1
+                // display: none
+            .about-txt
+                font-size: 2.5rem
+                text-align: center
+            .about-img img
+                width: 100px
+    
+    // .projects
+    //     .row > div
+    //         padding: 0
+
+    // .posts
+        // padding: 30px 15px
+    .posts, .post-container, .post
+        .blog-main
+            padding-left: 10px
+        .post, .post-details
+            .post-header
+                // h2
+                //     font-size: 2rem
+                // h3
+                //     font-size: 1.5rem
+            .post-txt p
+                font-size: 1.5rem
+            .tags
+                margin-bottom: 10px
+            .read-more
+                padding: 0 15px
+        .post-nav
+            .post-nav-dir:first-child
+                margin-bottom: 15px
+            .post-nav-dir
+                padding: 0 15px
+
+    .portfolio .tuto-title
+        font-size: 2rem!important
+    .portfolio .container > .row 
+        // margin-bottom: 20px!important
+    .summary-container
+        display: none
+    .page-footer
+        .row-eq-height > div
+            display: flex
+            justify-content: center!important
+        .list-inline
+            display: inline-block
+
+//MOBILE STYLE 992px =========================================================================
+@media screen and (max-width: 992px)
+    .row-eq-height
+        display: block
+        h1
+            display: none
+    .latest-post
+        text-align: center
+        .latest-post-img img
+            width: 50%
+        .latest-post-header h2
+            margin-top: 20px
+        .latest-post-txt
+            padding: 0 20px
+    
+    .about-me
+        .row
+            text-align: center
+            h2
+                margin-top: 20px
+
+    .posts .post-nav .post-nav-dir, .post-container .post-nav .post-nav-dir, .post .post-nav .post-nav-dir
+            padding: 0 15px!important
+    .posts .post, .post-container .post
+        .post-header > .row > div
+            padding: 0
+        .comments-count-container
+            .comments-count
+                border-radius: 5px
+                // float: none
+                height: auto
+                width: auto
+                padding: 5px 10px
+                cite small
+                    font-size: 1.5rem
+                    display: inline-block
+                    margin-left: 3px
+        
+    .comments-count-container .comments-count
+        float: none!important
+        margin: 0 auto
+        
+    .tutos .tuto-title p
+            font-size: 1.7rem
+    
+
+    // .post-nav
+    //     .post-nav-dir
+    //         width: 33.33333333%
+    //         float: left
+    //     .post-nav-next
+    //         margin-left: 33.33333333%
+    .resume
+        .section.competences
+            padding-right: 10%
+            padding-left: 10%
+    .portfolio .container > .row
+        // margin-bottom: 0
+    .page-footer
+        .copyright-txt
+            margin-bottom: 10px
+
+//MOBILE STYLE 800px =========================================================================
+@media screen and (max-width: 805px)
+    .container
+        padding: 30px 0
+    .row
+        text-align: center
+        .blog-sidebar
+            // border-top: dotted 3px #999
+            padding: 30px 10px 0!important
+            &:before
+                background-color: $light-blue
+                content: ""
+                position: absolute
+                top: 0
+                width: 90%
+                height: 3px
+                left: 50%
+                transform: translateX(-50%)
+    .row > div:first-child
+        // padding-bottom: 10px
+    .row > .blog-main , .row > .blog-sidebar
+        width: 90%
+        margin: 0 auto!important
+        float: none
+        padding: 0 10px 30px
+
+    .posts, .post-container,.post
+        text-align: left!important
+        .post-header
+            text-align: center
+        .post-img img
+            width: 70%!important
+            margin: 0 auto
+            display: block
+        .tags
+            display: block!important
+            text-align: left!important
+        // .read-more a, .post-nav span
+        //         width: 60%
+        //         margin: 0 auto
+    .comments-area
+        text-align: left
+
+    // .comments-count-container
+    //     .comments-count
+    //         float: none!important
+    //         margin: 0 auto
+
+    .tutos .tuto-title p
+        font-size: 2rem
+    
+    .resources 
+        .tool-descr 
+            text-align: left
+            padding: 0 20px
+
+    .resume
+        margin-right: 0!important
+        margin-left: 0!important
+        width: 100%!important
+        padding-right: 0!important
+        padding-left: 0!important
+        padding-bottom: 0!important
+        .content p, .content span
+            font-size: 1.5rem!important
+        .passion, .other-experiences
+            .container .container .row
+                text-align: left
+    .message-container 
+        .container
+            padding: 10px 20px
+        .message-body 
+            p
+                font-size: 2rem
+            i
+                display: none
+    
+//MOBILE STYLE > 768px ---> SPECIALE USE
+//MOBILE STYLE > 768px =========================================================================
+@media (min-width: 768px)
+    .people-say-carousel //#quote-carousel
+        margin-bottom: 0
+        padding: 0 40px 30px 40px
+
+//MOBILE STYLE < 768px =========================================================================
+@media screen and (max-width: 768px)
+    body.nav-fixed
+        padding-top: 50px
+    .carousel-control
+        display: none!important
+    .navbar
+        height: auto
+        padding: 0
+        .container
+            // padding-right: 10px
+            // padding-left: 10px
+            .navbar-toggle
+                margin-top: 8px
+    .navbar-header
+        height: 50px
+        margin-right: 0!important
+        margin-left: 15px!important
+        border-width: 0
+        img
+            top: 0
+            height: 100%
+
+    header
+        .progress.nav-fixed
+            top: 50px
+            position: fixed
+            right: 0
+            left: 0
+            
+    
+    header .progress
+        height: 5px
+    
+    .feature > .container > .row.me
+        margin-top: 10%
+    .feature > .container > .row.margin-top
+        margin-top: 0
+    .feature > .container > .row
+        margin-top: 8%
+    .container-fluid:not(.not)
+        padding: 10px 0!important
+    .container-fluid.feature
+        // padding: 30px 0!important
+        .container
+            padding: 30px 0
+    p
+        font-size: 2rem
+
+    .navbar .progress
+        position: relative
+        top: 5px
+
+    .feature 
+        padding: 30px 0
+        .middle-img
+            margin-top: 0
+            margin-bottom: 0
+            .col-md-12 img
+                width: 20%
+        .feature-txt
+            padding: 10px 10px!important
+            h1
+                line-height: 60px!important
+                font-size: 3rem
+                margin-top: -40px
+                margin-bottom: 10px
+            p
+                margin: 0
+                line-height: 40px
+                font-size: 2rem
+
+    .content
+        font-size: 2rem
+        .row > div
+            // margin-bottom: 20px
+        .row > div:last-child
+            margin-bottom: 0
+        .content-img
+            margin-bottom: 10px
+            i
+                font-size: 7rem
+            // img
+            //     height: 100px
+
+    .latest-post
+        color: #fff
+        // background: $dark
+        .latest-post-img
+            text-align: center
+            img
+                // width: 100%
+        .latest-post-header
+            h2
+                // margin-top: 5px
+                font-size: 2.5rem
+            h3
+                font-size: 2.1rem
+        .latest-post-txt
+            // font-size: 2rem
+
+    .people-say
+        // Make the indicators larger for easier clicking with fingers/thumb on mobile
+        .people-say-carousel .carousel-indicators //#quote-carousel .carousel-indicators
+            bottom: -20px !important
+            li
+                display: inline-block
+                margin: 0 5px
+                // width: 15px
+                // height: 15px
+                &.active
+                    margin: 0 5px
+                    // width: 20px
+                    // height: 20px
+        h2
+            font-size: 2.5rem
+            margin: 0
+        p
+            font-size: 1.7rem
+
+    .about-me
+        padding: 10px
+        .row > div
+            padding: 0
+        h1
+            font-size: 3rem
+        .about-img
+            margin-bottom: 10px
+        .about-txt
+            p
+                font-size: 2.5rem
+                text-align: center
+
+    .tutos
+        .container
+            // padding-top: 0
+        .row:first-child
+            // padding-top: 30px
+        .row > div:first-child
+            // margin-top: -20px
+        .row
+            text-align: center
+            .box
+                width: 80%
+                display: inline-block
+                margin-bottom: 10px
+        .row > div
+            padding: 0
+        .row > div:nth-last-child(2)
+            // margin-bottom: 20px
+
+        .tuto-title p
+            font-size: 3rem
+    .projects
+        padding-top: 0
+        .row:first-child
+            // padding-top: 30px
+        .row > div:first-child
+            // margin-top: -20px
+        .box
+            height: 150px
+            margin-bottom: 10px
+            padding: 0 20px
+            p
+                font-size: 2rem
+
+    .tutos, .projects
+        .row
+            padding: 0
+
+    .blog-main
+        padding: 15px
+        padding-bottom: 10px!important
+        // border-bottom: double 10px #000
+        
+    .posts, .post-container, .post
+        .post-header
+            // padding-left: 30px
+        .post, .post-details
+            text-align: center
+            .post-header
+                h2
+                    font-size: 3rem
+                h3
+                    font-size: 1.7rem
+            .post-img img
+                width: 90%
+            .post-txt p
+                font-size: 1.5rem
+            .tags
+                margin-bottom: 10px
+            .read-more
+                // width: 60%
+                // margin: 0 30px
+        .post-nav
+            padding: 15px 0 //15px 30px
+            .post-nav-dir:first-child
+                margin-bottom: 15px
+            // .post-nav-dir a
+            //     display: inline-block
+            // .post-nav-prev
+            //     float: left
+            // .post-nav-next
+            //     float: right
+                // margin: 0 auto
+
+    .resources
+        text-align: center
+
+        .tool-container .tool-category
+            .row > div
+                padding: 0
+            // &:last-child
+            //     border: none
+            .tool-btn-download
+                margin-top: 0
+                margin-bottom: 10px
+                display: inline-block
+                width: 50%
+            .tool-img 
+                padding-bottom: 10px
+                img
+                    width: 120px
+        .tool-txt 
+            padding: 0 10px
+
+    .blog-sidebar
+        // padding: 30px 15px 0!important
+        // border-top: dotted 5px #999        
+        ul.list-items-widget
+            margin-bottom: 0
+            // padding-bottom: 0!important
+            li:last-child
+                margin: 0!important
+
+        .people-say-txt
+            .blockquote p
+                font-size: 1.5rem!important
+
+    .container-fluid.resume-container
+        padding-bottom: 0!important
+        .resume 
+            padding-bottom: 0!important
+            .portfolio .wrapper img
+                //width: 70%
+
+            .passion .container, .other-experiences .container
+                // padding-right: 10%
+                // padding-left: 10%
+                text-align: left
+                .row
+                    margin-bottom: 0
+                    .col-sm-6
+                        margin-bottom: 10px
+        // .info_pers 
+        //     .form-group
+        //         margin: 10px 10px 20px 10px
+        //     .detail-text .col-sm-12
+        //         padding: 0
+
+    .portfolio 
+        .tuto-title p
+            font-size: 2.5rem!important
+        .container 
+            .row
+                margin-bottom: 0
+            .col-sm-4.col-md-4 
+                margin-bottom: 10px
+                .box
+                    width: 80%
+                    display: inline-block
+
+    .modal .modal-body .not-found-container .arrow.to-close
+            transform: translate(0%, 60%) rotateX(180deg) rotateY(180deg) rotateZ(-10deg) skew(-40deg, 30deg) scale(0.8)
+    .not-found-body
+        i
+            font-size: 8rem
+        span, p
+            font-size: 2.5rem
+    .page-footer
+        .copyright-txt
+            padding: 5px 0
+            margin-bottom: 10px
+        .contact-txt, .copyright-txt p, .owner p
+            font-size: 1.5rem
+        .social-icons i
+            font-size: 3rem
+
+// MOBILE STYLE 650px =========================================================================
+@media screen and (max-width: 650px) 
+    .timeline.reversed .section:before
+        border-width: 10px 10px 10px 0
+        border-color: transparent $nice-blue transparent transparent!important
+    .timeline
+        &:after    /* Place the timelime to the left */
+            left: 30px
+
+        .section /* Full-width containers */
+            width: 100%
+            padding-left: 70px
+            padding-right: 25px
+
+            &:before    /* Make sure that all arrows are pointing leftwards */
+                left: 60px
+                border: medium solid #fff
+                border-width: 10px 10px 10px 0
+                border-color: transparent #fff transparent transparent
+
+        .left::after, .right::after /* Make sure all circles are at the same spot */
+            left: 10px
+        .left, .right /* Make all right containers behave like the left ones */
+            left: 0!important
+            
+        .right.rotated .content, .right.rotated:before, .left.rotated .content, .left.rotated:before
+            transform: rotateY(100deg)!important
+        .right .content, .left .content
+            transform-origin: left!important
+        .right.rotated:before, .left.rotated:before
+            transform-origin: right!important
+        .left .rotated, .right .rotated
+            transform: rotateY(90deg)!important
+
+// MOBILE STYLE 500px =========================================================================
+@media screen and (max-width: 500px)
+    .feature 
+        .carousel-indicators
+            li
+                width: 40px
+        .btn-container
+            position: relative
+            bottom: 20px
+        .middle-img
+            margin-bottom: 0
+            margin-top: -10px
+            .col-md-12 img
+                width: 90px
+        .feature-txt h1
+            line-height: 40px!important
+            font-size: 2rem!important
+    .container-fluid .container
+        padding: 30px 0
+    .row
+        padding: 0
+
+    .content
+        a
+            margin-bottom: 10px
+        .row > div
+            width: 100%
+            float: none
+        .row > div:nth-last-child(1) a
+            margin-bottom: 0
+
+    .latest-post .container > .row > div:first-child
+            display: none
+    .latest-post
+        .latest-post-header h2
+            margin-top: 10px
+        .latest-post-txt
+            padding: 0
+
+    .people-say.container-fluid
+        // padding-bottom: 40px!important
+        .people-say-carousel
+            .carousel-indicators
+                bottom: 0!important
+    .posts, .post-container, .post
+        .post, .post-details
+            .post-header
+                h2
+                    font-size: 2.5rem
+                h3
+                    font-size: 1.5rem
+    //.posts .post .read-more, .posts .post-nav .post-nav-dir
+        // padding: 0 15px!important
+    .row > .blog-main, .row > .blog-sidebar
+        width: 100%!important
+        // padding-right: 0!important
+        // padding-left: 0!important
+    .comments-area 
+        *
+            font-size: 1.5rem
+            text-align: left
+        h3.comment-reply-title
+            font-size: 2rem
+        .comment-form-cookies-consent label
+            font-size: 1.5rem
+        .submit
+            text-align: center!important
+
+    .resume .progress .progress-bar
+        font-size: 1rem
+
+    .modal .modal-body .not-found-container .arrow.to-close
+            transform: translate(0%,50%) rotateX(180deg) rotateZ(-20deg) rotateY(180deg)
