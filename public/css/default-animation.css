@@ -1,0 +1,16 @@
+.middle_header_icon, 
+.middle_header_icon {
+    transform: rotate(45deg);
+	-moz-transition: rotate(45deg);
+	-ms-transition: rotate(45deg);
+	-o-transition: rotate(45deg);
+	-webkit-transition: rotate(45deg)
+}
+.middle_header_icon i,
+.middle_header_icon i{
+	transform: rotate(-45deg);
+	-moz-transition: rotate(-45deg);
+	-ms-transition: rotate(-45deg);
+	-o-transition: rotate(-45deg);
+	-webkit-transition: rotate(-45deg)
+}

@@ -1,0 +1,10 @@
+.navbar-nav > li {
+    padding: 25px 10px;
+}
+.center {
+    text-align: center;
+}
+
+.medium-size {
+    font-size: 1.8rem;
+}

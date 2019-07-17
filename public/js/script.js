@@ -143,10 +143,10 @@ $(function () {
 
 /***/ }),
 
-/***/ "./resources/sass/app.scss":
-/*!*********************************!*\
-  !*** ./resources/sass/app.scss ***!
-  \*********************************/
+/***/ "./resources/sass/custom-style-bundle.sass":
+/*!*************************************************!*\
+  !*** ./resources/sass/custom-style-bundle.sass ***!
+  \*************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -155,14 +155,14 @@ $(function () {
 /***/ }),
 
 /***/ 0:
-/*!****************************************************************!*\
-  !*** multi ./resources/js/script.js ./resources/sass/app.scss ***!
-  \****************************************************************/
+/*!********************************************************************************!*\
+  !*** multi ./resources/js/script.js ./resources/sass/custom-style-bundle.sass ***!
+  \********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! E:\C_Drive\Work\Job\CREAWAY\EHM\ehm-laravel\resources\js\script.js */"./resources/js/script.js");
-module.exports = __webpack_require__(/*! E:\C_Drive\Work\Job\CREAWAY\EHM\ehm-laravel\resources\sass\app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! E:\C_Drive\Work\Job\CREAWAY\EHM\ehm-laravel\resources\sass\custom-style-bundle.sass */"./resources/sass/custom-style-bundle.sass");
 
 
 /***/ })

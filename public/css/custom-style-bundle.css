@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);@-webkit-keyframes spin {
+@-webkit-keyframes spin {
   0%, 100% {
     transform: rotate(0deg);
   }
@@ -222,8 +222,24 @@
   }
 }
 
+.medium-size {
+  font-size: 1.8rem;
+}
+
+.ml-10 {
+  margin-left: 20px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
 .uppercase {
   text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
 }
 
 .center {
@@ -243,24 +259,12 @@
   background-color: #00984B;
 }
 
-.center {
-  text-align: center;
+.block {
+  display: block;
 }
 
-.medium-size {
-  font-size: 1.8rem;
-}
-
-.capitalize {
-  text-transform: capitalize;
-}
-
-.uppercase {
-  text-transform: uppercase;
-}
-
-.mgl-10 {
-  margin-left: 20px;
+.inline-block {
+  display: inline-block;
 }
 
 .navbar-brand {
@@ -587,11 +591,29 @@
   margin: 2% auto 0;
 }
 
+.card-wrapper {
+  margin-bottom: 30px;
+}
+
+.card-wrapper .card {
+  border: 1px solid #d0d0d0;
+  border-radius: 5px;
+}
+
+.card-wrapper .card-body {
+  padding: 30px;
+}
+
+.card-wrapper .card-img-wrapper {
+  height: 200px;
+  overflow: hidden;
+}
+
 /* LAYOUTS */
 
 .feature {
   text-align: center;
-  padding: 150px 0 !important;
+  padding: 150px 0;
   position: relative;
   overflow: hidden;
   height: 510px;
@@ -859,7 +881,7 @@
 }
 
 .feature {
-  padding: 0 !important;
+  padding: 0;
 }
 
 .feature ._container,
@@ -956,5 +978,54 @@
 .feature .feature-txt-img {
   position: relative;
   top: 20%;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar-nav > li {
+    padding: 0;
+  }
+}
+
+#banner {
+  padding: 0;
+}
+
+@media screen and (max-width: 450px) {
+  .card-wrapper .card {
+    margin: 0 30px;
+  }
+
+  .card-wrapper .card .card-img-wrapper {
+    height: 150px;
+  }
+
+  .card-wrapper .card .card-title {
+    font-size: 1.4rem;
+  }
+
+  .card-wrapper .card .card-text {
+    font-size: 1.3rem;
+    padding: 0;
+  }
+
+  .card-wrapper .card .card-date {
+    font-size: 1.3rem;
+  }
+
+  .card-wrapper .card .card-body {
+    padding: 20px;
+  }
+}
+
+.products-grid .mix {
+  padding: 0 50px;
+}
+
+.products-grid .mix .inner-box {
+  margin-bottom: 0;
+}
+
+.products-grid .mix .overlay-box p {
+  padding: 0;
 }
 

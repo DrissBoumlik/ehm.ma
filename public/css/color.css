@@ -1,0 +1,452 @@
+/* #7aba1e => #00984B */
+/*---- RGBA Colors ----*/
+.gallery_overlay:before,
+.default-portfolio-item .overlay-box .port-content,
+.sidebar-gallery a:hover:before {
+	background:rgba(122, 186, 30, 0.9)
+}
+.before-muddy:before,
+.how-work:before {
+	background: rgba(67, 71, 58, 0.5);
+}
+#achivment::before,
+.project-img .overlay,
+#banner::before,
+.intro-video:before{
+	background: rgba(0, 0, 0, 0.5);
+}
+.ad-bnr::before {
+	background: rgba(54, 59, 64, 0.5);
+}
+.hover-overlay::before  {
+	background: rgba(231, 231, 231, 0.2);
+	}
+
+.before-dark:before {
+	background: rgba(0, 0, 0, 0.5);
+}
+/*========= Footer Color ========*/
+.media-footer li a{
+	background: #2a2e2a;
+	color: #fff
+}
+#footer {
+	background: #191e18 
+}
+#ftr-btm {
+	background: #131812
+}
+/*========= Font Color ==========*/
+.color-white {
+	color: #fff
+}
+.inner-title a:hover,
+.color-default{
+	color:#00984B
+}
+.color-dark {
+	color: #1a1a1a
+}
+.color-black {
+	color: #000
+}
+.br-widget > a.br-active,
+.br-widget > a.br-selected {
+	color:#00984B
+}
+#success,
+.about-link .overlay a,
+.faq-question .according_title.active,
+.pricing-table .rate span,
+.discount,
+.edu-title {
+	color:#00984B
+}
+.nav-style-3.four .navbar-default .navbar-nav li.visible > a,
+.nav-style-3.four .navbar-default .navbar-nav li.visible > a:hover,
+.nav-style-3.four .navbar-default .navbar-nav li.visible > a:focus,
+.nav-style-3.four .bootstrap-select .dropdown-menu.inner li:hover a,
+.nav-style-3.four .bootstrap-select .dropdown-menu.inner li.selected a{
+	color:#fff
+}
+.choose-reason li i:before,
+.quick-help i,
+.widget.contact_info li i,
+.widget li a:hover,
+.wel-con.middle [class^="flaticon-"]::before, 
+.wel-con.middle [class*=" flaticon-"]::before,
+.srvc-icon [class^="flaticon-"]::before, 
+.srvc-icon [class*=" flaticon-"]::before,
+.help-info span [class^="flaticon-"]::before, 
+.help-info span [class*=" flaticon-"]::before {
+	color:#00984B
+}
+.navbar-default .navbar-nav li.visible > a,
+.navbar-default .navbar-nav li.visible > a:hover,
+.navbar-default .navbar-nav li.visible > a:focus,
+.bootstrap-select .dropdown-menu.inner li:hover a,
+.bootstrap-select .dropdown-menu.inner li.selected a,
+.arrow1 a.btn-primary:hover,
+.news-txt a .news-title:hover {
+	color:#00984B
+}
+.srvc-item:hover .srvc-icon [class^="flaticon-"]::before, 
+.srvc-item:hover .srvc-icon [class*=" flaticon-"]::before, 
+.srvc-item:hover .srvc-icon [class^="flaticon-"]::after, 
+.srvc-item:hover .srvc-icon [class*=" flaticon-"]::after,
+.srvc-item:hover .inner-title {
+	color:#000
+}
+.featured-tab .nav-tabs li.active a,
+.featured-tab .nav-tabs li:hover a,
+.featured-tab .nav-tabs li.active:hover a,
+.featured-tab .nav-tabs li.active:focus a,
+.featured-tab .nav-tabs li.active a span,
+.featured-tab .nav-tabs li:hover a span,
+.featured-tab .nav-tabs li.active:hover a span,
+.featured-tab .nav-tabs li.active:focus a span {
+	color: #fff
+}
+.srvc-item:hover a, .event_tag ul a {
+	color: #000
+}
+.faq-question .according_details {
+	color: #e1e1e1
+}
+.about-link .overlay .inner-title,
+.faq-question .according_title,
+.faq-question .inner-title,
+.srvc-item:hover p {
+	color: #fff
+}
+.team_member .name a,
+.overview-caption p,
+.remaining-time,
+.color > span, 
+.size > span, 
+.quantity > span,
+.btn-large,
+.skill-percent,
+.prgs-bar > span,
+.pro-bio tr td:first-child,
+.recent-post > .post > a,
+blockquote {
+	color: #1a1a1a
+}
+.color-white,
+.sldr-content p,
+.user-nav li a .cart-item,
+.featured-tab .tab-content p{
+	color: #fff
+}
+.btn-link:hover, 
+.btn-link:focus{
+	color: #1a1a1a 
+}
+.nav-style-3 .navbar-nav li a,
+.nav-style-3 .user-nav > li > a,
+.nav-style-2 .navbar-nav li a,
+.nav-style-2 .user-nav > li > a,
+.fixed-header .navbar-nav li a,
+.fixed-header .user-nav a,
+.navbar-nav li a,
+.srvc-ctgry a,
+.prdct-lst > li > a,
+.prdct-lst li a {
+	color:#444
+}
+.top-info-left li span,
+.slider-title,
+.team_member .soc-icon a:hover i,
+.navbar-nav > li > a,
+.srvc-ctgry > a,
+.user-nav > li > a,
+.fixed-header .user-nav a.btn,
+.nav-style-4.four .navbar-default .navbar-left > li > a,
+.nav-style-4.four .user-nav > li > a {
+	color:#fff
+}
+.nav-style-4.four .navbar-default .navbar-left > li > a:hover,
+.nav-style-4.four .navbar-default .navbar-left > li > a:focus,
+.nav-style-4.four .navbar-default .navbar-left > li.active > a{
+	color: #fff
+}
+.fixed-header .navbar-default .navbar-nav .active a, 
+.fixed-header .navbar-default .navbar-nav .active a:hover, 
+.fixed-header .navbar-default .navbar-nav .active a:focus {
+	color: #00984B
+}
+.color-default,
+.team_member .name a:hover,
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus,
+.account li a:hover,
+.account li a:focus {
+	color: #00984B
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+	background-color: transparent;
+	color: #00984B
+}
+.navbar-default .navbar-nav > li:hover > a,
+.navbar-default .navbar-nav > li:focus > a {
+	background-color: transparent;
+	color: #00984B
+}
+.team_member .soc-icon a,
+.cnct-item  a {
+	color: #818181
+}
+.meta_info i, .share_this a:hover,
+.event_description blockquote i,
+.event_organizer span, .tags span{
+	color:#00984B
+}
+/*=========== Background Color ===========*/
+.bg-default {
+	background-color: #00984B;
+	color: #fff
+}
+.bg-gray {
+	background-color: #f5f5f5;
+}
+.bg-white {
+	background-color: #fff
+}
+.bg-dark {
+	background-color: #1a1a1a
+}
+.nav-style-4.four .navbar-nav > li.active a,
+.nav-style-4.four .navbar-nav > li:hover{
+	background:#00984B
+}
+.history-tab .year-list li a,
+.sidebar-gallery a:hover::before {
+	background:#00984B
+}
+.srvc-ctgry li.active a,
+.welfare_meta li a:hover {
+	background:#00984B;
+	color: #fff
+}
+.blog-img a {
+	background: #fff;
+	color: #00984B
+}
+.color-white.down-line::before,
+#header.fixed-header .main-nav,
+.navbar-nav .dropdown-menu,
+.filter-range::before,
+.filter-range::after,
+.team_member .soc-icon a,
+.send-query, .welfare_meta li a,
+.event_tag ul a{
+	background: #fff
+}
+.media-footer li a:hover,
+.faq-question .according_title::before, 
+.faq-question .according_title::after,
+.video-popup span,
+.srvc-item:hover,
+.down-line::before,
+.user-nav li a .cart-item,
+.according_title.active,
+.how-work .video-popup span,
+.progress-bar {
+	background: #00984B
+}
+.btn-primary:active, 
+.btn-primary.active, 
+.open > .dropdown-toggle.btn-primary,
+.btn-primary:hover {
+	background: transparent;
+	color: #00984B
+}
+.btn-primary:focus,
+.btn-primary.focus {
+	background: transparent;
+	color: #00984B
+}
+.btn-default:hover,
+.project-img .overlay a.btn-default:hover {
+	background: #00984B;
+	border-color: #00984B;
+	color: #fff
+}
+.filter-btns li:hover,
+.filter-btns li.active {
+	background: #00984B
+}
+.team_member .soc-icon a:hover,
+.fixed-header .navbar-nav li a .cart-item,
+.tags a:hover {
+	background: #00984B;
+	color: #fff
+}
+.team_member {
+	background: #f8f8f8
+}
+.project-grid .caption,
+.according_title,
+.prdct-img,
+.product-filter,
+.single-product-slider,
+.filter-btns li,
+.client-feed,
+.pro-link,
+.prfl-progress .progress{
+	background: #f5f5f5
+}
+#slider .carousel-caption h1, 
+.panel-title a {
+	background: #00984B
+}
+.owl-theme .owl-dots .owl-dot span {
+	background: #ccc
+}
+.according_title::before,
+.according_title::after {
+	background: #818181
+}
+.brchr li a:hover{
+	background-color: #1a1a1a
+}
+/*========= Border Color ==========*/
+.down-angle-gray::before{
+	border-color: #f5f5f5 transparent transparent transparent
+}
+.down-angle-white::before{
+	border-color: #fff transparent transparent transparent
+}
+.btn-default {
+	background-color: #f5f5f5;
+	border-color: #f5f5f5;
+	color: #1a1a1a
+}
+.owl-theme .owl-dots .owl-dot span {
+	border-color: #fff
+}
+.recent-review.owl-theme .owl-dots .owl-dot span,
+.service-grids.owl-theme .owl-dots .owl-dot span {
+	border-color: #f5f5f5
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+	border-color: #00984B;
+	background: transparent
+}
+blockquote {
+	border-left: 5px solid #00984B;
+}
+.user-nav li a .cart-item::before {
+	border-color: transparent transparent transparent #00984B;
+}
+.filter-range::after,
+.filter-range::before {
+	border-color: #00984B
+}
+/*========= Home Page =======*/
+.filter-btns li:hover,
+.filter-btns li.active {
+	color: #fff
+}
+.cart-item, 
+.wel-mdl a,
+.check-lst i,
+.clnt-txt h6 a,
+.news-txt span a,
+.soc-icon a, 
+#single-blog .soc-icon a:hover, 
+.tweet i,
+.rating i,
+.comment i,
+.post_area i,
+.spec-text,
+.com-info a{
+	color:#00984B
+}
+.ft-list li a:hover,
+.title span,
+.bnr-nav li .active, 
+.error-con h1, 
+.com-info h6, 
+.pro-detail h2, 
+.acdmc-dtl h6, 
+.prdct-avlblt{
+	color:#00984B
+}
+.team-item:hover .tm-text a, 
+.bnr-nav li .bnr-home:hover, 
+.prdct-lst li a:hover, 
+.blog-category li a:hover, 
+.archive li a:hover, 
+.twt-txt > a:hover{
+	color:#00984B
+} 
+.btn-primary,
+.btn-submit,
+.abt-item,
+.filter-range,
+.btn-filter,
+.sale,
+.cnct-item span i,
+.pro-link .soc-icon a,
+.brchr li{
+	background:#00984B;
+	-moz-transition: all 300ms ease-in-out;
+	-ms-transition: all 300ms ease-in-out;
+	-webkit-transition: all 300ms ease-in-out;
+	-o-transition: all 300ms ease-in-out;
+	transition: all 300ms ease-in-out
+}
+.bullets > span > a.active, 
+.view-ctgry li a i.active, 
+.populer_comment .nav-tabs > li.active > a, 
+.populer_comment .nav-tabs > li.active > a:focus, 
+.pagination li.active a{
+	background:#00984B
+}
+#service-pg .srvc-item:hover, 
+.pagination a:hover, 
+.view-ctgry li a i:hover, 
+.search-box > a:hover, 
+.populer_comment .nav-tabs > li > a:hover, 
+.srvc-ctgry li a:hover, 
+.quantity button:hover {
+	background:#00984B
+}
+
+.btn-primary,
+.filter-btns li:hover,
+.filter-btns li.active,
+.product-thumbnail:hover .prdct-img{
+	border-color:#00984B
+}
+.popular_tab > li > a:before{
+	border-top-color:#00984B
+}
+.tab-menu .nav-tabs > li.active > a, 
+.tab-menu .nav-tabs > li > a:hover, 
+.tab-menu .nav-tabs > li.active > a:focus{
+	border-bottom:3px solid #00984B
+}
+#header .dropdown-menu > .active > a, 
+#header .dropdown-menu > .active > a:hover, 
+#header .dropdown-menu > .active > a:focus {
+  background-color: transparent;
+  color: #00984B
+}
+@media (max-width:991px){
+.navbar-default .navbar-collapse{
+	border-color: #1a1a1a
+}
+.nav-style-3.four .navbar-nav > li.active a,
+.nav-style-3.four .navbar-nav > li:hover{
+	background-color: transparent
+}
+.nav-style-3.four .navbar-nav li a{
+	color: #fff
+}
+}
