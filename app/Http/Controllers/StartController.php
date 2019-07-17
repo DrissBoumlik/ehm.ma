@@ -6,6 +6,13 @@ use Illuminate\Http\Request;
 
 class StartController extends Controller
 {
+
+    public function index()
+    {
+        // TODO - Store events and retrieve theme
+        return view('index');
+    }
+
     public function getCities()
     {
         $regions_json_file = file_get_contents(storage_path('app\public') . '\json\region.json', true);
