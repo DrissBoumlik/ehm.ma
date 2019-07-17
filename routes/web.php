@@ -15,6 +15,7 @@
 //     return view('welcome');
 // });
 
+Route::get('/', 'StartController@index');
 Route::get('/json', 'StartController@getCities');
 Route::resource('products', 'ProductController');
 Route::resource('events', 'EventController');
