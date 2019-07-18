@@ -9,6 +9,10 @@
 
 <div class="container padding-80">
     <div class="row">
+        @if ($empty)
+        <h1 class="center">No event was found</h1>
+        @else
+
         @foreach($events as $event)
         <div class="col-md-4 col-sm-6 col-xs-12 card-wrapper">
             <a href="/{{ $event->id }}">
@@ -25,6 +29,8 @@
             </a>
         </div>
         @endforeach
+
+        @endif
     </div>
 </div>
 

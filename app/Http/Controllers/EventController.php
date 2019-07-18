@@ -15,7 +15,8 @@ class EventController extends Controller
     public function index()
     {
         $events = Event::all();
-        return view('events.index', ['events' => $events]);
+        $empty = $events->count() ? false : true;
+        return view('events.index', ['events' => $events, 'empty' => $empty]);
     }
 
     /**

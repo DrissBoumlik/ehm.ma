@@ -17,7 +17,9 @@ class ProductController extends Controller
         $products = Product::all();
         $cities = collect($products)->pluck('city')->unique();
         // dd($products[0]);
-        return view('products.index', ['products' => $products, 'cities' => $cities]);
+        $empty = ($products->count() && $cities->count()) ? false : true;
+
+        return view('products.index', ['products' => $products, 'cities' => $cities, 'empty' => $empty]);
     }
 
     /**

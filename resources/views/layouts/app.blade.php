@@ -50,7 +50,7 @@
 </head>
 <body class="page-wrapper home">
 	<!-- Preloader start -->
-	{{--  <div class="preloader">
+	<div class="preloader">
 		<div id="cssload-global">
 			<div id="cssload-top" class="cssload-mask">
 				<div class="cssload-plane"></div>
@@ -64,7 +64,7 @@
 			</div>
 			<div class="loading-text">Chargement...</div>
 		</div>
-	</div>  --}}
+	</div>
 	<!-- Preloader start -->
 
 	<div id="page_wrapper">

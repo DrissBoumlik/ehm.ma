@@ -290,7 +290,7 @@
 }
 
 .feature {
-  padding-top: 90px !important;
+  padding-top: 70px !important;
 }
 
 .feature .feature-txt p {
@@ -421,7 +421,7 @@
 }
 
 #banner {
-  margin-top: 90px !important;
+  margin-top: 70px !important;
 }
 
 .default-portfolio-item {
@@ -455,6 +455,10 @@
   visibility: visible;
   height: auto;
   transform: none;
+}
+
+.products-grid .overlay-box .box-title {
+  font-size: 1.5rem;
 }
 
 .products-grid .overlay-box p {

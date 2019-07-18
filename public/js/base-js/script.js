@@ -1,3 +1,3 @@
 $(function (){
-    $('.nav-on-top').removeClass('fixed-header');
+    // $('.nav-on-top').removeClass('fixed-header');
 })

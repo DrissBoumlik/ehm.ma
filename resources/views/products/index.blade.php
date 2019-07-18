@@ -29,6 +29,10 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
+                @if ($empty)
+                    <h1 class="center">No product was found</h1>
+                @else
+
                 <!--Filter-->
                 <div class="filters text-center">
                     <ul class="filter-tabs filter-btns clearfix anim-3-all">
@@ -60,7 +64,7 @@
                                         <div class="port-content">
                                             <div class="glry-hvr-txt">
                                                 {{--  <a href="single-project.html">  --}}
-                                                    <h4 class="box-title uppercase">{{ $product->name . ' / ' . $product->city}}</h4>
+                                                    <h4 class="box-title uppercase">{{ str_limit($product->name . ' / ' . $product->city, $limit = 20) }}</h4>
                                                 {{--  </a>  --}}
                                                 <p>{{ str_limit($product->description, $limit = 60) }}</p>
                                             </div>
@@ -78,10 +82,11 @@
                                         <button type="button" class="close" data-dismiss="modal"
                                             aria-label="Close"><span
                                                 aria-hidden="true">&times;</span></button>
-                                        <h4 class="modal-title uppercase" id="myModalLabel">{{ $product->name }}</h4>
+                                        <h4 class="modal-title uppercase" id="myModalLabel">{{ $product->name . ' / ' . $product->city }}</h4>
                                     </div>
                                     <!--Image Box-->
-                                    <figure class="image-box"><img src="{{ $product->image }}" alt="">
+                                    <figure class="image-box" style="background-image: url('{{ $product->image}}'); background-size:cover">
+                                        {{-- <img src="{{ $product->image }}" alt=""> --}}
                                     </figure>
                                     <div class="modal-body">
                                         <p>{{ $product->description }}</p>
@@ -96,6 +101,8 @@
                     </div>
                     @endforeach
                 </div>
+
+                @endif
             </div>
         </div>
         <div class="row hidden">
