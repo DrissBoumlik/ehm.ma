@@ -3,14 +3,20 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 
 class StartController extends Controller
 {
 
     public function index()
     {
-        // TODO - Store events and retrieve theme
         return view('index');
+    }
+
+    public function switchLang($locale)
+    {
+        \Session::put('locale', $locale);
+        return redirect()->back();
     }
 
     public function getCities()
