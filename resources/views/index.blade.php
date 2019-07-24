@@ -1,6 +1,10 @@
 @extends('layouts.app')
 
 
+@section('title')
+    {{ ucfirst(trans('file.menu.home')) }}
+@endsection
+
 @section('content')
 
 <div class="container-fluid feature" style="height: 600px;">
@@ -20,41 +24,17 @@
 
                     <!-- Carousel Slides / Quotes -->
                     <div class="carousel-inner">
-                        <!-- Quote 1 -->
-                        <div class="item active">
-                            <div class="row">
-                                <div class="feature-txt col-sm-12 col-md-12">
-                                    <h1 class="bg-dark-lighter">Elite Harvest</h1><br>
-                                    <p class="no-margin bg-dark-lighter">Nous inspirons tout le monde à
-                                        atteindre l'objectif ultime de « <span class="uppercase">Société
-                                            saine</span> »</p><br />
-                                    <button class="btn btn-primary">voir plus</button>
+                        @for ($i = 0; $i < count(Lang::get('file.home-page.slider')); $i++)
+                            <div class="item {{ $i == 0 ? 'active' : '' }}">
+                                <div class="row">
+                                    <div class="feature-txt col-sm-12 col-md-12">
+                                        <h1 class="bg-dark-lighter"> {{ trans('file.home-page.slider.slide-' . $i . '.header') }}</h1></br>
+                                        <p class="no-margin bg-dark-lighter">{{ trans('file.home-page.slider.slide-' . $i . '.text') }}</p><br />
+                                        <button class="btn btn-primary">{{ trans('file.home-page.slider.slide-' . $i . '.button') }}</button>
+                                    </div>
                                 </div>
                             </div>
-                        </div><!-- Quote 2 -->
-                        <div class="item">
-                            <div class="row">
-                                <div class="feature-txt col-sm-12 col-md-12">
-                                    <h1 class="bg-dark-lighter">Elite Harvest</h1><br>
-                                    <p class="no-margin bg-dark-lighter">Nous inspirons tout le monde à
-                                        atteindre l'objectif ultime de « <span class="uppercase">Société
-                                            saine</span> »</p><br />
-                                    <button class="btn btn-primary">voir plus</button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Quote 3 -->
-                        <div class="item">
-                            <div class="row">
-                                <div class="feature-txt col-sm-12 col-md-12">
-                                    <h1 class="bg-dark-lighter">Elite Harvest</h1><br>
-                                    <p class="no-margin bg-dark-lighter">Nous inspirons tout le monde à
-                                        atteindre l'objectif ultime de « <span class="uppercase">Société
-                                            saine</span> »</p><br />
-                                    <button class="btn btn-primary">voir plus</button>
-                                </div>
-                            </div>
-                        </div>
+                        @endfor
                     </div>
 
                     <!-- Carousel Buttons Next/Prev -->
@@ -80,15 +60,10 @@
             <div class="col-md-7">
                 <div class="wow fadeInLeft animated" data-wow-delay="300ms" data-wow-duration="700ms"
                     style="visibility: visible; animation-duration: 700ms; animation-delay: 300ms; animation-name: fadeInLeft;">
-                    <h2 class="title uppercase">à propos d'<span>elite harverst</span></h2>
+                    <h2 class="title uppercase">{{ trans('file.home-page.about-us.header') }}<span>{{ trans('file.home-page.about-us.brand') }}</span></h2>
                     <div class="sub-title">
-                        <p>Elite Harvest Maroc (EHM) est l'un des principaux producteurs et distributeurs de
-                            fruits frais de la région. Nos principaux objectifs sont la qualité et
-                            l’accessibilité économique. Nous cultivons, recherchons, importons et
-                            commercialisons une vaste gamme de produits agricoles de haute qualité grâce à
-                            une technologie de classe mondiale et à une chaîne de distribution efficace.</p>
-                        <p>Nous accordons également la priorité à l'utilisation économique de nos précieuses
-                            ressources naturelles - eau, énergie et terres.</p>
+                        <p>{{ trans('file.home-page.about-us.text-1') }}</p>
+                        <p>{{ trans('file.home-page.about-us.text-2') }}</p>
                     </div>
                 </div>
             </div>
@@ -211,16 +186,9 @@
             <div class="col-md-7">
                 <div class="about-txt wow fadeInRight mgl-10" data-wow-delay="300ms"
                     data-wow-duration="500ms">
-                    <h2 class="title"><span>ELITE HARVEST</span> EVERYWHERE IN MOROCCO</h2>
+                    <h2 class="title uppercase"><span>{{ trans('file.home-page.about-us.brand') }}</span> {{ trans('file.home-page.mission.header') }}</h2>
                     <div class="sub-title">
-                        <p>Elite Harvest Maroc vise l’écriture d’une nouvelle histoire verte sur les terres
-                            du Maroc . On est l’un des principaux producteurs et distributeurs des fruits
-                            frais quotidiens dans la région et notre objectif principal est toujours la
-                            qualité et l’abordabilité . On s’engage dans la croissance , l’approvisionnement
-                            , l’importation et la commercialisation d’une vaste gamme de produits agricoles
-                            d’une haute qualité à travers la technologie de la classe mondiale et l’efficace
-                            chaine de distribution avec l’utilisation la plus économique de notre ressources
-                            naturelles conservant l’eau , l’énergie et la terre .</p>
+                        <p>{{ trans('file.home-page.mission.text') }}</p>
                     </div>
                 </div>
             </div>
@@ -239,59 +207,18 @@
             <div class="col-md-7 col-sm-12">
                 <div class="col-md-12 no-padding-mobile padding-80">
                     <h2 class="title wow fadeInRight uppercase center" data-wow-delay="300ms"
-                        data-wow-duration="700ms">nos services</h2>
+                        data-wow-duration="700ms">{{ trans('file.home-page.our-services.header') }}</h2>
                     <div class="text-area">
                         <ul class="choose-reason">
-                            <li>
+                            @for ($i = 0; $i < count(Lang::get('file.home-page.our-services.services')); $i++)
+                            <li {{ $i == count(Lang::get('file.home-page.our-services.services')) - 1 && $i % 2 == 0 ? 'class=full-width' : '' }}>
                                 <i class="flaticon-check-1"></i>
                                 <div class="li-box">
-                                    <h5 class="inner-title">Gestion des projets agricoles</h5>
-                                    <span>Nous entreprenons l’agriculture à grande échelle et possédons la
-                                        capacité
-                                        de fournir des conseils spécialisés et un service de qualité
-                                        ...</span>
+                                    <h5 class="inner-title">{{ trans('file.home-page.our-services.services.service-' . $i . '.title') }}</h5>
+                                    <span>{{ trans('file.home-page.our-services.services.service-' . $i . '.description') }}</span>
                                 </div>
                             </li>
-                            <li>
-                                <i class="flaticon-check-1"></i>
-                                <div class="li-box">
-                                    <h5 class="inner-title">Développemene agricole</h5>
-                                    <span>FamNous utilisons les nouvelles technologies avec un accent pointu
-                                        sur
-                                        les pratiques agricoles détaillées visant à maximiser la quantité de
-                                        production...</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="flaticon-check-1"></i>
-                                <div class="li-box">
-                                    <h5 class="inner-title">Gestion des fermes</h5>
-                                    <span>Nous offrons des services de gestion agricole productifs et
-                                        rentables en
-                                        utilisant les dernières technologies, combinant les ressources
-                                        locales
-                                        et internationales…</span>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="flaticon-check-1"></i>
-                                <div class="li-box">
-                                    <h5 class="inner-title">Conseil en irrigation</h5>
-                                    <span>La plupart des entreprises agricoles, grandes ou petites,
-                                        dépendent de
-                                        l’irrigation pour produire des fruits et légumes frais de grande
-                                        qualité. Mais il y a plusieurs défis à relever…</span>
-                                </div>
-                            </li>
-                            <li class="full-width">
-                                <i class="flaticon-check-1"></i>
-                                <div class="li-box">
-                                    <h5 class="inner-title">Services de laboratoire</h5>
-                                    <span>Nous voulons contribuer à l’importation des dernières technologies
-                                        agricoles et du savoir-faire vers le pays et aussi encourager et
-                                        soutenir pour les adapter aux conditions du Maroc…</span>
-                                </div>
-                            </li>
+                            @endfor
                         </ul>
                     </div>
                 </div>
@@ -307,65 +234,24 @@
         <div class="row">
             <div class="col-md-12">
                 <h2 class="title down-line text-center wow fadeInUp uppercase" data-wow-delay="300ms"
-                    data-wow-duration="700ms">nos valeurs</h2>
+                    data-wow-duration="700ms">{{ trans('file.home-page.our-values.header') }}</h2>
             </div>
         </div>
         <div class="row">
             <div class="col-md-12">
                 <div class="service-grid-3 margin-top-15">
+                    @for ($i = 0; $i < count(Lang::get('file.home-page.our-values.values')); $i++)
                     <div class="item">
                         <div class="bg-gray item-style-3 text-center">
-                            <div class="srvc-icon box-round-white"><span class="flaticon-nature-3"></span>
+                            <div class="srvc-icon box-round-white"><span class="{{ trans('file.home-page.our-values.values.value-' . $i . '.icon') }}"></span>
                             </div>
-                            <a href="tree-plantation.html">
-                                <h4 class="inner-title">Adhésion à la qualité</h4>
+                            <a href="#">
+                                <h4 class="inner-title">{{ trans('file.home-page.our-values.values.value-' . $i . '.title') }}</h4>
                             </a>
-                            <a class="margin-top-20 btn btn-primary" href="tree-plantation.html">Read
-                                More</a>
+                            <a class="margin-top-20 btn btn-primary" href="#">{{ trans('file.home-page.our-values.values.value-' . $i . '.button') }}</a>
                         </div>
                     </div>
-                    <div class="item">
-                        <div class="bg-gray item-style-3 text-center">
-                            <div class="srvc-icon box-round-white"><span class="flaticon-travel"></span>
-                            </div>
-                            <a href="garden-care.html">
-                                <h4 class="inner-title">Favoriser la croissance agricole par l’innovation
-                                </h4>
-                            </a>
-                            <a class="margin-top-20 btn btn-primary" href="garden-care.html">Read More</a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="bg-gray item-style-3 text-center">
-                            <div class="srvc-icon box-round-white"><span class="flaticon-nature-1"></span>
-                            </div>
-                            <a href="watering-garden.html">
-                                <h4 class="inner-title">Travailler avec la durabilité à l’esprit</h4>
-                            </a>
-                            <a class="margin-top-20 btn btn-primary" href="watering-garden.html">Read
-                                More</a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="bg-gray item-style-3 text-center">
-                            <div class="srvc-icon box-round-white"><span class="flaticon-plant"></span>
-                            </div>
-                            <a href="garden-design.html">
-                                <h4 class="inner-title">Agir avec intégrité</h4>
-                            </a>
-                            <a class="margin-top-20 btn btn-primary" href="garden-design.html">Read More</a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="bg-gray item-style-3 text-center">
-                            <div class="srvc-icon box-round-white"><span class="flaticon-plant"></span>
-                            </div>
-                            <a href="garden-design.html">
-                                <h4 class="inner-title">Engagement envers la responsabilité sociale</h4>
-                            </a>
-                            <a class="margin-top-20 btn btn-primary" href="garden-design.html">Read More</a>
-                        </div>
-                    </div>
+                    @endfor
                 </div>
             </div>
         </div>
@@ -374,67 +260,32 @@
 <!-- Values -->
 
 <!-- Events -->
-<section class="full-row bg-gray">
+<section class="full-row bg-gray events">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
                 <h2 class="title text-center down-line wow fadeInUp uppercase" data-wow-delay="300ms"
-                    data-wow-duration="700ms">événements</h2>
-                <span class="sub-title box text-center wow fadeIn" data-wow-delay="500ms"
-                    data-wow-duration="700ms">Elit ultricies adipiscing ornare. Rutrum sapien aliquet
-                    mollis. Pretium condimentum. Cursus elit hac fames laoreet non nec facilisis quis
-                    dui.</span>
+                    data-wow-duration="700ms">{{ trans('file.home-page.events.header') }}</h2>
             </div>
         </div>
         <div class="row margin-top-15">
             <div class="col-md-12">
                 <div class="service-grid">
+                    @foreach ($events as $event)
                     <div class="col-md-4 col-sm-6">
                         <div class="service-box-image">
                             <div class="grid-img">
-                                <a href="tree-plantation.html"><img src="images/our_service/1.png"
-                                        alt=""></a>
+                                <a href="tree-plantation.html"><img src="{{ $event->image }}" alt="{{ $event->title }}"></a>
                             </div>
                             <div class="service-grid-txt">
-                                <span>Juin 12, 2017</span>
-                                <h3 class="sec-title uppercase"><a href="tree-plantation.html">the award of
-                                        the best investor 2017</a></h3>
-                                <p>His highness The Prince Moulay Rachid has chaired on Thursday 20th April
-                                    2017 the ceremony...</p>
+                                <span>{{ (new Carbon\Carbon($event->start_date))->format('F d, Y') }}</span>
+                                <h3 class="sec-title uppercase"><a href="tree-plantation.html">{{ str_limit($event->title, $limit = 20) }}</a></h3>
+                                <p>{{ str_limit($event->description, $limit = 60) }}</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="service-box-image">
-                            <div class="grid-img">
-                                <a href="tree-plantation.html"><img src="images/our_service/2.png"
-                                        alt=""></a>
-                            </div>
-                            <div class="service-grid-txt">
-                                <span>Juin 12, 2017</span>
-                                <h3 class="sec-title uppercase"><a href="tree-plantation.html">the award of
-                                        the best investor 2017</a></h3>
-                                <p>His highness The Prince Moulay Rachid has chaired on Thursday 20th April
-                                    2017 the ceremony...</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-sm-6">
-                        <div class="service-box-image">
-                            <div class="grid-img">
-                                <a href="tree-plantation.html"><img src="images/our_service/3.png"
-                                        alt=""></a>
-                            </div>
-                            <div class="service-grid-txt">
-                                <span>Juin 12, 2017</span>
-                                <h3 class="sec-title uppercase"><a href="tree-plantation.html">the award of
-                                        the best investor 2017</a></h3>
-                                <p>His highness The Prince Moulay Rachid has chaired on Thursday 20th April
-                                    2017 the ceremony...</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="text-center"><a class="btn btn-primary" href="#">Voir Plus</a></div>
+                    @endforeach
+                    <div class="text-center"><a class="btn btn-primary" href="/events">{{ trans('file.home-page.events.button') }}</a></div>
                 </div>
             </div>
         </div>
