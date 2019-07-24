@@ -36,7 +36,7 @@
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
-    <title>Laravel</title>
+    <title>@yield('title')</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -48,7 +48,7 @@
     <link href="{{ asset('css/custom-style-bundle.css') }}" rel="stylesheet">
 
 </head>
-<body class="page-wrapper home">
+<body class="page-wrapper">
 	<!-- Preloader start -->
 	<div class="preloader">
 		<div id="cssload-global">
@@ -62,7 +62,7 @@
 			<div id="cssload-bottom" class="cssload-mask">
 				<div class="cssload-plane"></div>
 			</div>
-			<div class="loading-text">Chargement...</div>
+			<div class="loading-text capitalize">{{ trans('file.pre-loader') }}</div>
 		</div>
 	</div>
 	<!-- Preloader start -->
@@ -87,24 +87,12 @@
 
 							<!-- Collect the nav links, forms, and other content for toggling -->
 							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-								<!-- <ul class="user-nav navbar-right lang"> -->
-								<ul class="navigation nav navbar-nav navbar-right lang hidden">
-									<li class="dropdown">
-										<a class="user-toggle" data-toggle="dropdown" href="#">Languages</span></a>
-										<ul class="cart-dropdown account">
-											<li><img src="/images/langues/fr.png"><a href="#">FR</a></li>
-											<li><img src="/images/langues/en.png"><a href="#">ENG</a></li>
-											<li><img src="/images/langues/ar.png"><a href="#">AR</a></li>
-										</ul>
-									</li>
-								</ul>
-
 								<ul class="navigation nav navbar-nav navbar-right">
 									<li class="dropdown">
-										<a class="dropdown-toggle" href="/">Accueil</a>
+										<a class="dropdown-toggle capitalize" href="/">{{ trans('file.menu.home') }}</a>
 									</li>
 									<li class="dropdown">
-										<a class="dropdown-toggle" data-toggle="dropdown" href="#">A propos de nous <i
+										<a class="dropdown-toggle capitalize" data-toggle="dropdown" href="#">{{ trans('file.menu.about-us') }} <i
 												class="fa fa-angle-right" aria-hidden="true"></i></a>
 										<ul class="dropdown-menu">
 											<li><a href="#">Elite Harvest Maroc</a></li>
@@ -118,7 +106,7 @@
 										</ul>
 									</li>
 									<li class="dropdown">
-										<a class="dropdown-toggle" data-toggle="dropdown" href="#">Services <i
+										<a class="dropdown-toggle capitalize" data-toggle="dropdown" href="#">{{ trans('file.menu.services') }} <i
 												class="fa fa-angle-right" aria-hidden="true"></i></a>
 										<ul class="dropdown-menu">
 											<li><a href="#">Société d’agriculture</a></li>
@@ -130,7 +118,7 @@
 										</ul>
 									</li>
 									<li class="dropdown">
-										<a href="/products">Produits <i class="fa fa-angle-right"
+										<a class="capitalize" href="/products">{{ trans('file.menu.products') }} <i class="fa fa-angle-right"
 												aria-hidden="true"></i></a>
 										<ul class="dropdown-menu">
 											<li><a href="#">Kenitra</a></li>
@@ -141,14 +129,13 @@
 										</ul>
 									</li>
 									<li class="dropdown">
-										<a class="dropdown-toggle" data-toggle="dropdown" href="#">Qualité
-											assurances</a>
+										<a class="dropdown-toggle capitalize" data-toggle="dropdown" href="#">{{ trans('file.menu.quality-assurances') }}</a>
 									</li>
-									<li class="dropdown"><a class="dropdown-toggle"
-											href="/events">Evenements</a>
+									<li class="dropdown"><a class="dropdown-toggle capitalize"
+											href="/events">{{ trans('file.menu.events') }}</a>
 									</li>
-									<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown"
-											href="#">Contactez-nous <i class="fa fa-angle-right"
+									<li class="dropdown"><a class="dropdown-toggle capitalize" data-toggle="dropdown"
+											href="#">{{ trans('file.menu.contact-us') }} <i class="fa fa-angle-right"
 												aria-hidden="true"></i></a>
 										<ul class="dropdown-menu">
 											<li><a href="blog.html">Get in touch</a></li>
@@ -157,12 +144,12 @@
 										</ul>
 									</li>
 									<li class="dropdown">
-										<a class="dropdown-toggle" data-toggle="dropdown" href="#">Languages <i
+										<a class="dropdown-toggle capitalize" data-toggle="dropdown" href="#">{{ trans('file.menu.languages') }} <i
 												class="fa fa-angle-right" aria-hidden="true"></i></a>
 										<ul class="dropdown-menu lang">
-											<li><a href="#"><img src="images/langues/fr.png"> FR</a></li>
-											<li><a href="#"><img src="images/langues/en.png"> ENG</a></li>
-											<li><a href="#"><img src="images/langues/ar.png"> AR</a></li>
+											<li><a href="{{ url('locale/fr') }}"><img src="images/langues/fr.png"> FR</a></li>
+											<li><a href="{{ url('locale/en') }}"><img src="images/langues/en.png"> ENG</a></li>
+											<li><a href="{{ url('locale/ar') }}"><img src="images/langues/ar.png"> AR</a></li>
 										</ul>
 									</li>
 								</ul>
