@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Product;
 use Illuminate\Http\Request;
+use DB;
 
 class ProductController extends Controller
 {
@@ -14,7 +15,13 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $products = Product::all();
+        $lang = \Session::get('locale');
+        // dd($lang);
+        $products = DB::table('products')
+                    ->select('name_' . $lang . ' as name', 'description_' . $lang . ' as description',
+                            'image', 'city')->get();
+        // dd($products[0]);
+        // $products = Product::all();
         $cities = collect($products)->pluck('city')->unique();
         // dd($products[0]);
         $empty = ($products->count() && $cities->count()) ? false : true;
