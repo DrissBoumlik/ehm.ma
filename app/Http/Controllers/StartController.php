@@ -4,13 +4,15 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
+use DB;
 
 class StartController extends Controller
 {
 
     public function index()
     {
-        return view('index');
+        $events = DB::table('events')->take(3)->get();
+        return view('index', ['events' => $events]);
     }
 
     public function switchLang($locale)
