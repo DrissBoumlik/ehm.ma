@@ -86,34 +86,63 @@ class ProductsTableSeeder extends Seeder
             'They Have Anti-Inflammatory Effects. Eating sweet potatoes may also help reduce inflammation. This is chiefly due to their high levels of beta-carotene, vitamin C, and magnesium'
         ];
         $p_img = [
-            'http://www.ehm.ma/wp-content/uploads/2016/11/175x-blueberry-175.png',
-            'http://www.ehm.ma/wp-content/uploads/2016/11/175x-raspberries-png-raspberries-531-175.png',
-            'http://www.ehm.ma/wp-content/uploads/2016/11/175x-P4-175.png',
-            'http://www.ehm.ma/wp-content/uploads/2016/11/175x-strawberry_PNG2621-175.png',
-            'http://www.ehm.ma/wp-content/uploads/2016/11/175x-P12-175.png',
-            'http://www.ehm.ma/wp-content/uploads/2016/11/175x-blueberry-175.png',
-            'http://www.ehm.ma/wp-content/uploads/2016/11/175x-raspberries-png-raspberries-531-175.png',
-            'http://www.ehm.ma/wp-content/uploads/2016/11/175x-booy-175.png',
-            'http://www.ehm.ma/wp-content/uploads/2016/11/175x-P5-175.png',
-            'http://www.ehm.ma/wp-content/uploads/2016/11/175x-Large_Red_Apples_PNG_Clipart-175.png',
-            'http://www.ehm.ma/wp-content/uploads/2016/11/175x-P10-175.png',
-            'http://www.ehm.ma/wp-content/uploads/2016/11/175x-300569_thumb-175.png',
-            'http://www.ehm.ma/wp-content/uploads/2016/11/175x-P5-175.png',
-            'http://www.ehm.ma/wp-content/uploads/2016/11/175x-peche.png',
-            'http://www.ehm.ma/wp-content/uploads/2016/11/175x-P9-175.png',
-            'http://www.ehm.ma/wp-content/uploads/2016/11/175x-persimmon_PNG9197-175.png',
-            'http://www.ehm.ma/wp-content/uploads/2016/11/175x-kar-175.png',
-            'http://www.ehm.ma/wp-content/uploads/2016/11/175x-P12-175.png',
-            'http://www.ehm.ma/wp-content/uploads/2016/11/175x-P9-175.png',
-            'http://www.ehm.ma/wp-content/uploads/2016/11/grape-175-1.png',
-            'http://www.ehm.ma/wp-content/uploads/2016/11/175x-sweet-potato-175.png'
+
+            '/images/products/1 (3).jpg',
+            '/images/products/1 (12).jpg',
+            '/images/products/1 (14).jpg',
+            '/images/products/1 (13).jpg',
+            '/images/products/1 (15).jpg',
+            '/images/products/1 (3).jpg',
+
+            '/images/products/1 (12).jpg',
+            '/images/products/1 (2).jpg',
+            '/images/products/1 (10).jpg',
+            '/images/products/1 (11).jpg',
+            '/images/products/1 (8).jpg',
+            '/images/products/1 (16).jpg',
+
+            '/images/products/1 (10).jpg',
+            '/images/products/1 (17).jpg',
+            '/images/products/1 (1).jpg',
+            '/images/products/1 (5).jpg',
+            '/images/products/1 (6).jpg',
+            '/images/products/1 (15).jpg',
+
+            '/images/products/1 (1).jpg',
+            '/images/products/1 (18).jpg',
+            '/images/products/1 (19).jpg',
+            // 'http://www.ehm.ma/wp-content/uploads/2016/11/175x-blueberry-175.png',
+            // 'http://www.ehm.ma/wp-content/uploads/2016/11/175x-raspberries-png-raspberries-531-175.png',
+            // 'http://www.ehm.ma/wp-content/uploads/2016/11/175x-P4-175.png',
+            // 'http://www.ehm.ma/wp-content/uploads/2016/11/175x-strawberry_PNG2621-175.png',
+            // 'http://www.ehm.ma/wp-content/uploads/2016/11/175x-P12-175.png',
+            // 'http://www.ehm.ma/wp-content/uploads/2016/11/175x-blueberry-175.png',
+            // 'http://www.ehm.ma/wp-content/uploads/2016/11/175x-raspberries-png-raspberries-531-175.png',
+            // 'http://www.ehm.ma/wp-content/uploads/2016/11/175x-booy-175.png',
+            // 'http://www.ehm.ma/wp-content/uploads/2016/11/175x-P5-175.png',
+            // 'http://www.ehm.ma/wp-content/uploads/2016/11/175x-Large_Red_Apples_PNG_Clipart-175.png',
+            // 'http://www.ehm.ma/wp-content/uploads/2016/11/175x-P10-175.png',
+            // 'http://www.ehm.ma/wp-content/uploads/2016/11/175x-300569_thumb-175.png',
+            // 'http://www.ehm.ma/wp-content/uploads/2016/11/175x-P5-175.png',
+            // 'http://www.ehm.ma/wp-content/uploads/2016/11/175x-peche.png',
+            // 'http://www.ehm.ma/wp-content/uploads/2016/11/175x-P9-175.png',
+            // 'http://www.ehm.ma/wp-content/uploads/2016/11/175x-persimmon_PNG9197-175.png',
+            // 'http://www.ehm.ma/wp-content/uploads/2016/11/175x-kar-175.png',
+            // 'http://www.ehm.ma/wp-content/uploads/2016/11/175x-P12-175.png',
+            // 'http://www.ehm.ma/wp-content/uploads/2016/11/175x-P9-175.png',
+            // 'http://www.ehm.ma/wp-content/uploads/2016/11/grape-175-1.png',
+            // 'http://www.ehm.ma/wp-content/uploads/2016/11/175x-sweet-potato-175.png'
         ];
 
         for ($index = 0; $index < count($p_desc); $index++) {
             $product = new Product;
             // $p->fill((array)$product);
-            $product->name = $p_names[$index];
-            $product->description = $p_desc[$index];
+            $product->name_fr = 'fr_' . $index;
+            $product->name_en = $p_names[$index];
+            $product->name_ar = 'ar_' . $index;
+            $product->description_fr =  'desc_fr_' . $index;
+            $product->description_en = $p_desc[$index];
+            $product->description_ar =  'desc_ar_' . $index;
             $product->thumbnail = $p_img[$index];
             $product->image = $p_img[$index];
             $product->city = $cities[$index];
