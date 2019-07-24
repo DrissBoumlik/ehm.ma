@@ -990,8 +990,10 @@
   }
 }
 
-#banner {
-  padding: 0;
+@media screen and (max-width: 768px) {
+  #banner {
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 450px) {
@@ -1021,15 +1023,17 @@
   }
 }
 
-.products-grid .mix {
-  padding: 0 50px;
-}
+@media screen and (max-width: 768px) {
+  .products-grid .mix {
+    padding: 0 50px;
+  }
 
-.products-grid .mix .inner-box {
-  margin-bottom: 0;
-}
+  .products-grid .mix .inner-box {
+    margin-bottom: 0;
+  }
 
-.products-grid .mix .overlay-box p {
-  padding: 0;
+  .products-grid .mix .overlay-box p {
+    padding: 0;
+  }
 }
 
