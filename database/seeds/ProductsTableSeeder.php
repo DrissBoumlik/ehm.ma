@@ -40,27 +40,27 @@ class ProductsTableSeeder extends Seeder
 
 
         $p_names = [
-            'BLUEBERRY',
-            'RASPBERRY',
-            'BLACKBERRY',
-            'STRAWBERRY',
-            'GOJI BERRY',
-            'BLUEBERRY',
-            'RASPBERRY',
-            'PEAR',
-            'PLUM',
-            'APPLE',
-            'CHERRY',
-            'APRICOT',
-            'PLUM',
-            'PEACH / N',
-            'POMEGRANATE',
-            'PERSIMMON',
-            'FIG',
-            'GOJI BERRY',
-            'POMEGRANATE',
-            'GRAPE',
-            'SWEET POTATO'
+            ['BLUEBERRY', 'MYRTILLE', ''],
+            ['RASPBERRY', 'FRAMBOISE', ''],
+            ['BLACKBERRY', 'LA MÛRE', ''],
+            ['STRAWBERRY', 'FRAISE', ''],
+            ['GOJI BERRY', 'GOJI BERRY', ''],
+            ['BLUEBERRY', 'MYRTILLE', ''],
+            ['RASPBERRY', 'FRAMBOISE', ''],
+            ['PEAR', 'POIRE', ''],
+            ['PLUM', 'PRUNE', ''],
+            ['APPLE', 'POMME', ''],
+            ['CHERRY', 'CERISE', ''],
+            ['APRICOT', 'ABRICOT', ''],
+            ['PLUM', 'PRUNE', ''],
+            ['PEACH / N', 'PÊCHE / N', ''],
+            ['POMEGRANATE', 'GRENADE', ''],
+            ['PERSIMMON', 'PERSIMMON', ''],
+            ['FIG', 'FIGUE', ''],
+            ['GOJI BERRY', 'GOJI BERRY', ''],
+            ['POMEGRANATE', 'GRENADE', ''],
+            ['GRAPE', 'GRAIN DE RAISIN', ''],
+            ['SWEET POTATO', 'PATATE DOUCE', ''],
         ];
         $p_desc = [
             'The fiber, potassium, folate, vitamin C, vitamin B6, and phytonutrient content in blueberries helps to reduce the total amount of cholesterol in the blood and decrease the risk of heart disease.',
@@ -137,8 +137,8 @@ class ProductsTableSeeder extends Seeder
         for ($index = 0; $index < count($p_desc); $index++) {
             $product = new Product;
             // $p->fill((array)$product);
-            $product->name_fr = 'fr_' . $index;
-            $product->name_en = $p_names[$index];
+            $product->name_fr = $p_names[$index][1];
+            $product->name_en = $p_names[$index][0];
             $product->name_ar = 'ar_' . $index;
             $product->description_fr =  'desc_fr_' . $index;
             $product->description_en = $p_desc[$index];

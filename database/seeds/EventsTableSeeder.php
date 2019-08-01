@@ -18,8 +18,12 @@ class EventsTableSeeder extends Seeder
         for ($index = 0; $index < 12; $index++) {
             $e = new Event;
             // $e->fill((array)$event);
-            $e->title = $faker->text(50);
-            $e->description = $faker->text(200);
+            $e->title_fr = $faker->text(50);
+            $e->title_en = $faker->text(50);
+            $e->title_ar = $faker->text(50);
+            $e->description_fr = $faker->text(200);
+            $e->description_en = $faker->text(200);
+            $e->description_ar = $faker->text(200);
             $e->start_date = $faker->date();
             $e->image = 'http://www.ehm.ma/wp-content/uploads/2017/06/3-600x403.jpg';
             $e->save();
