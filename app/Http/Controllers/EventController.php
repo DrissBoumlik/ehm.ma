@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Event;
 use Illuminate\Http\Request;
+use DB;
+use Carbon\Carbon;
+use Session;
 
 class EventController extends Controller
 {
@@ -14,7 +17,12 @@ class EventController extends Controller
      */
     public function index()
     {
-        $events = Event::all();
+        $lang = Session::get('locale');
+
+        // $events = Event::all();
+        $events = DB::table('events')
+                    ->select('id', 'title_' . $lang . ' as title', 'description_' . $lang . ' as description',
+                            'image', 'start_date', 'end_date')->get();
         $empty = $events->count() ? false : true;
         return view('events.index', ['events' => $events, 'empty' => $empty]);
     }
