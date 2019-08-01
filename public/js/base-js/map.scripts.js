@@ -1,6 +1,6 @@
 (function($) {
 	'use strict';
-	
+
 	if (document.getElementById("map")) {
 
 	google.maps.event.addDomListener(window, 'load', init);
@@ -8,8 +8,8 @@
 	function init() {
 		"use strict";
 		var mapOptions = {
-			zoom: 14,
-			center: new google.maps.LatLng(40.672324, -74.357372), // New York
+			zoom: 18,
+			center: new google.maps.LatLng(33.950644, -6.871889), // New York
 			styles: [
 		{
 			"featureType": "landscape",
