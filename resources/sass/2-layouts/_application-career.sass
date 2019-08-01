@@ -1,0 +1,89 @@
+.application_message
+    .input-group
+        position: relative
+        display: flex
+        flex-wrap: wrap
+        -webkit-box-align: stretch
+        align-items: stretch
+        width: 100%
+        >.custom-file
+            display: -webkit-box
+            display: -ms-flexbox
+            display: flex
+            -webkit-box-align: center
+            -ms-flex-align: center
+            align-items: center
+            position: relative
+            -webkit-box-flex: 1
+            -ms-flex: 1 1 auto
+            flex: 1 1 auto
+            width: 1%
+            margin-bottom: 0
+
+            &:not(:last-child) .custom-file-label, &:not(:last-child) .custom-file-label::before
+                border-top-right-radius: 0
+                border-bottom-right-radius: 0
+
+        >.input-group-append>.btn,
+        >.input-group-append>.input-group-text,
+        >.input-group-prepend:first-child>.btn:not(:first-child),
+        >.input-group-prepend:first-child>.input-group-text:not(:first-child),
+        >.input-group-prepend:not(:first-child)>.btn,
+        >.input-group-prepend:not(:first-child)>.input-group-text
+            border-top-left-radius: 0
+            border-bottom-left-radius: 0
+
+    .custom-file
+        position: relative
+        display: inline-block
+        width: 100%
+        height: calc(3.25rem + 11px)
+        margin-bottom: 0
+
+    .custom-file-input
+        position: relative
+        z-index: 2
+        width: 100%
+        height: calc(3.25rem + 11px)
+        margin: 0
+        opacity: 0
+
+    .custom-file-label
+        position: absolute
+        top: 0
+        right: 0
+        left: 0
+        z-index: 1
+        height: calc(3.25rem + 11px)
+        padding: 0.5rem 1rem
+        line-height: 2
+        color: #495057
+        background-color: #fff
+        border: 1px solid #ced4da
+        border-radius: .25rem
+        &::after
+            position: absolute
+            top: 0
+            right: 0
+            bottom: 0
+            z-index: 3
+            display: block
+            height: calc(calc(3.25rem + 11px) - 1px * 2)
+            padding: 0.5rem 1rem
+            line-height: 2
+            color: #495057
+            content: "Browse"
+            background-color: #e9ecef
+            border-left: 1px solid #ced4da
+            border-radius: 0 .25rem .25rem 0
+
+    .input-group-append
+        margin-left: -1px
+
+    .input-group-append, .input-group-prepend
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+
+    .message
+        margin-top: 20px
