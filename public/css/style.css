@@ -3117,7 +3117,7 @@ a.scroll-btn {
 /*=====================================
 32. Project Thumbnail Grid
 ======================================*/
-.project-grid {
+.item-grid {
 	background-color: #fff;
 	border: none;
 	display: block;
@@ -3127,22 +3127,22 @@ a.scroll-btn {
 	padding:0;
 	transition: border 0.2s ease-in-out 0s;
 }
-.project-grid .inner-title {
+.item-grid .inner-title {
 	margin-bottom: 10px
 }
-.project-grid .caption{
+.item-grid .caption{
 	padding: 20px 15px
 }
-.project-img {
+.item-img {
 	position: relative;
 }
-.project-img .overlay {
+.item-img .overlay {
 	opacity: 0;
 }
-.project-img:hover .overlay {
+.item-img:hover .overlay {
 	opacity: 1
 }
-.project-img .overlay a.btn-default {
+.item-img .overlay a.btn-default {
 	background-color: transparent;
 	color: #fff;
 	position: absolute;
@@ -3154,7 +3154,7 @@ a.scroll-btn {
 	-o-transform: translate(-50%, -50%) scale(0.9);
 	transform: translate(-50%, -50%) scale(0.9)
 }
-.project-img:hover .overlay a.btn-default {
+.item-img:hover .overlay a.btn-default {
 	-ms-transform: translate(-50%, -50%) scale(1);
 	-moz-transform: translate(-50%, -50%) scale(1);
 	-webkit-transform: translate(-50%, -50%) scale(1);
