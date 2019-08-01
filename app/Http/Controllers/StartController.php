@@ -5,14 +5,24 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Redirect;
 use DB;
+use Session;
 
 class StartController extends Controller
 {
 
     public function index()
     {
-        $events = DB::table('events')->take(3)->get();
-        return view('index', ['events' => $events]);
+        $lang = Session::get('locale') ?? 'fr';
+        $events = DB::table('events')
+        ->select('id', 'title_' . $lang . ' as title', 'description_' . $lang . ' as description',
+        'image', 'start_date', 'end_date')->orderBy('created_at')
+        ->take(3)->get();
+
+        $products = DB::table('products')
+        ->select('name_' . $lang . ' as name', 'description_' . $lang . ' as description',
+                'image', 'city')->take(9)->get();
+
+        return view('index', ['products' => $products, 'events' => $events]);
     }
 
     public function switchLang($locale)
