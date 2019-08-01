@@ -1,27 +1,13 @@
 @extends('layouts.app')
+@section('title')
+    {{ ucfirst(trans('file.menu-top.products')) }}
+@endsection
+
 
 
 @section('content')
 
-
-<!-- Banner Section Start -->
-<div id="banner">
-    <div class="container">
-        <div class="row padding-80">
-            <div class="col-md-6 col-sm-6">
-                <h2 class="page-title">Products</h2>
-            </div>
-            <div class="col-md-6 col-sm-6">
-                <ul class="page-location">
-                    <li><a href="/">Accueil</a></li>
-                    <li><a href="#">.</a></li>
-                    <li><a class="active" href="#">Products</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Banner Section End -->
+@include('layouts.headline', ['headline' => ucfirst(trans('file.menu-top.products'))])
 
 
 <!-- Portfolio Section Start -->
@@ -36,16 +22,10 @@
                 <!--Filter-->
                 <div class="filters text-center">
                     <ul class="filter-tabs filter-btns clearfix anim-3-all">
-                        <li class="active filter" data-role="button" data-filter="all">ALL products</li>
+                        <li class="active filter" data-role="button" data-filter="all">{{ trans('file.products-page.all-products') }}</li>
                         @foreach ($cities as $city)
                         <li class="filter" data-role="button" data-filter=".{{ $city }}">{{ $city }}</li>
                         @endforeach
-                        {{--  <li class="filter" data-role="button" data-filter=".kenitra">kenitra</li>
-                        <li class="filter" data-role="button" data-filter=".sidi-yahya">sidi yahya</li>
-                        <li class="filter" data-role="button" data-filter=".sefrou">sefrou</li>
-                        <li class="filter" data-role="button" data-filter=".fes">fes</li>
-                        <li class="filter" data-role="button" data-filter=".beni-mellal">benimellal</li>
-                        <li class="filter" data-role="button" data-filter=".marrakech">marrakech</li>  --}}
                     </ul>
                 </div>
                 <!--Filter List-->

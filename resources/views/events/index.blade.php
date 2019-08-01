@@ -1,11 +1,14 @@
 @extends('layouts.app')
+@section('title')
+    {{ ucfirst(trans('file.menu-top.events')) }}
+@endsection
 
 
 
 
 @section('content')
 
-@include('layouts.headline')
+@include('layouts.headline', ['headline' => ucfirst(trans('file.menu-top.events'))])
 
 <div class="container padding-80">
     <div class="row">
