@@ -5,8 +5,6 @@ namespace App\Http\Controllers;
 use App\Event;
 use Illuminate\Http\Request;
 use DB;
-use Carbon\Carbon;
-use Session;
 
 class EventController extends Controller
 {
@@ -17,7 +15,7 @@ class EventController extends Controller
      */
     public function index()
     {
-        $lang = Session::get('locale');
+        $lang = get_lang();
 
         // $events = Event::all();
         $events = DB::table('events')

@@ -15,8 +15,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        $lang = \Session::get('locale');
-        // dd($lang);
+        $lang = get_lang();
         $products = DB::table('products')
                     ->select('name_' . $lang . ' as name', 'description_' . $lang . ' as description',
                             'image', 'city')->get();
