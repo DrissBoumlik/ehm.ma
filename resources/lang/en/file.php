@@ -2,7 +2,8 @@
 
 return [
     'pre-loader' => 'loading...',
-    'menu' => [
+    'rights' => 'All rights reserved. Harvest Elite Morocco',
+    'menu-top' => [
         'home' => 'home',
         'about-us' => 'about us',
         'services' => 'services',
@@ -10,7 +11,36 @@ return [
         'quality-assurances' => 'quality assurances',
         'events' => 'events',
         'contact-us' => 'contact us',
+        'careers' => 'careers',
         'languages' => 'languages',
+    ],
+    'menu-footer-1' => [
+        'header' => 'Who are we',
+        'item1' => 'Elite Harvest Morocco',
+        'item2' => 'Our vision',
+        'item3' => 'Our mission',
+        'item4' => 'Our values',
+        'item5' => 'Production',
+        'item6' => 'Network',
+        'item7' => 'Human ressources',
+        'item8' => 'Corporate social responsibility'
+    ],
+    'menu-footer-2' => [
+        'header' => 'Services',
+        'item1' => 'Agricultural Society',
+        'item2' => 'Agricultural development',
+        'item3' => 'Farm management',
+        'item4' => 'Irrigation Consulting Company',
+        'item5' => 'Laboratory Services',
+        'item6' => 'Food',
+    ],
+    'menu-footer-3' => [
+        'header' => 'Infos / Contact',
+        'item1' => 'Quality assurance',
+        'item2' => 'Contact us',
+        'item3' => 'Work together',
+        'item4' => 'Careers',
+        'item5' => 'Elite Argo LLC',
     ],
     'home-page' => [
         'slider' => [
@@ -112,4 +142,25 @@ return [
     'products-page' => [
         'all-products' => 'all products'
     ],
+    'contact-form' => [
+        'header' => 'send message',
+        'name' => 'name',
+        'email' => 'Email',
+        'subject' => 'Subject',
+        'message' => 'Message',
+        'send-btn' => 'Send'
+    ],
+    'career-form' => [
+        'first-name' => 'First name',
+        'last-name' => 'Last name',
+        'email' => 'Email',
+        'phone' => 'Phone number',
+        'job' => 'Job applied for',
+        'diploma' => 'Highest diploma',
+        'years-exp' => 'Number of years of experience',
+        'upload-cv' => 'Upload CV',
+        'upload-letter' => 'Upload Letter',
+        'message' => 'Message',
+        'send-btn' => 'Send'
+    ]
 ];

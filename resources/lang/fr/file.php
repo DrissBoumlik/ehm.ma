@@ -2,15 +2,45 @@
 
 return [
     'pre-loader' => 'Chargement...',
-    'menu' => [
+    'rights' => 'Tous droits résérvés. Harvest Elite Maroc',
+    'menu-top' => [
         'home' => 'accueil',
         'about-us' => 'à propos de nous',
-        'services' => 'services',
+        'services' => 'sérvices',
         'products' => 'produits',
-        'quality-assurances' => 'qualité assurances',
+        'quality-assurances' => 'assurances de qualité',
         'events' => 'événements',
         'contact-us' => 'contactez-nous',
+        'careers' => 'carrières',
         'languages' => 'langues'
+    ],
+    'menu-footer-1' => [
+        'header' => 'Qui sommes nous',
+        'item1' => 'Elite Harvest Maroc',
+        'item2' => 'Notre vision',
+        'item3' => 'Notre mission',
+        'item4' => 'Nos valeurs',
+        'item5' => 'Production',
+        'item6' => 'Réseau',
+        'item7' => 'Ressources humaines',
+        'item8' => 'Responsabilité sociale des entreprises'
+    ],
+    'menu-footer-2' => [
+        'header' => 'Services',
+        'item1' => 'Société d’agriculture',
+        'item2' => 'Le développement agricole',
+        'item3' => 'Gestion agricole',
+        'item4' => 'Société de conseil en irrigation',
+        'item5' => 'Services de laboratoire',
+        'item6' => 'Aliments',
+    ],
+    'menu-footer-3' => [
+        'header' => 'Infos / Contact',
+        'item1' => 'Assurance de qualité',
+        'item2' => 'Nous contacter',
+        'item3' => 'Travailler ensemble',
+        'item4' => 'Carrières',
+        'item5' => 'Elite Argo LLC',
     ],
     'home-page' => [
         'slider' => [
@@ -110,8 +140,29 @@ return [
             'header' => 'événements',
             'button' => 'voir plus'
         ]
-        ],
+    ],
     'products-page' => [
         'all-products' => 'tous les produits'
+    ],
+    'contact-form' => [
+        'header' => 'Envoyer un message',
+        'name' => 'Nom',
+        'email' => 'Email',
+        'subject' => 'Sujet',
+        'message' => 'Message',
+        'send-btn' => 'Envoyer'
+    ],
+    'career-form' => [
+        'first-name' => 'Prénom',
+        'last-name' => 'Nom',
+        'email' => 'Email',
+        'phone' => 'Téléphone',
+        'job' => 'Emploi demandé pour',
+        'diploma' => 'Diplôme le plus élevé',
+        'years-exp' => 'Nombre d\'années d\'expérience',
+        'upload-cv' => 'Télécharger CV',
+        'upload-letter' => 'Télécharger une lettre',
+        'message' => 'Message',
+        'send-btn' => 'Envoyer'
     ]
 ];
