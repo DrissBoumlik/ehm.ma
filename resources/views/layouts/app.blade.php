@@ -36,7 +36,7 @@
 		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
-    <title>@yield('title')</title>
+    <title>@yield('title') - Elite Harvest Maroc</title>
 
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -89,10 +89,10 @@
 							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 								<ul class="navigation nav navbar-nav navbar-right">
 									<li class="dropdown">
-										<a class="dropdown-toggle capitalize" href="/">{{ trans('file.menu.home') }}</a>
+										<a class="dropdown-toggle capitalize" href="/">{{ trans('file.menu-top.home') }}</a>
 									</li>
 									<li class="dropdown">
-										<a class="dropdown-toggle capitalize" data-toggle="dropdown" href="#">{{ trans('file.menu.about-us') }} <i
+										<a class="dropdown-toggle capitalize" data-toggle="dropdown" href="#">{{ trans('file.menu-top.about-us') }} <i
 												class="fa fa-angle-right" aria-hidden="true"></i></a>
 										<ul class="dropdown-menu">
 											<li><a href="#">Elite Harvest Maroc</a></li>
@@ -106,7 +106,7 @@
 										</ul>
 									</li>
 									<li class="dropdown">
-										<a class="dropdown-toggle capitalize" data-toggle="dropdown" href="#">{{ trans('file.menu.services') }} <i
+										<a class="dropdown-toggle capitalize" data-toggle="dropdown" href="/services">{{ trans('file.menu-top.services') }} <i
 												class="fa fa-angle-right" aria-hidden="true"></i></a>
 										<ul class="dropdown-menu">
 											<li><a href="#">Société d’agriculture</a></li>
@@ -118,33 +118,25 @@
 										</ul>
 									</li>
 									<li class="dropdown">
-										<a class="capitalize" href="/products">{{ trans('file.menu.products') }} <i class="fa fa-angle-right"
-												aria-hidden="true"></i></a>
-										<ul class="dropdown-menu">
-											<li><a href="#">Kenitra</a></li>
-											<li><a href="#">Sefrou</a></li>
-											<li><a href="#">Fes</a></li>
-											<li><a href="#">Benimellal</a></li>
-											<li><a href="#">Marrakech</a></li>
-										</ul>
+										<a class="capitalize" href="/products">{{ trans('file.menu-top.products') }}</a>
 									</li>
 									<li class="dropdown">
-										<a class="dropdown-toggle capitalize" data-toggle="dropdown" href="#">{{ trans('file.menu.quality-assurances') }}</a>
+										<a class="capitalize" href="/quality-assurance">{{ trans('file.menu-top.quality-assurances') }}</a>
 									</li>
 									<li class="dropdown"><a class="dropdown-toggle capitalize"
-											href="/events">{{ trans('file.menu.events') }}</a>
+											href="/events">{{ trans('file.menu-top.events') }}</a>
 									</li>
 									<li class="dropdown"><a class="dropdown-toggle capitalize" data-toggle="dropdown"
-											href="#">{{ trans('file.menu.contact-us') }} <i class="fa fa-angle-right"
+											href="#">{{ trans('file.menu-top.contact-us') }} <i class="fa fa-angle-right"
 												aria-hidden="true"></i></a>
 										<ul class="dropdown-menu">
-											<li><a href="blog.html">Get in touch</a></li>
-											<li><a href="blog-detail.html">Career</a></li>
-											<li><a href="blog-detail.html">Working together</a></li>
+											<li><a class="capitalize" href="/contact">{{ trans('file.menu-top.contact-us') }}</a></li>
+											<li><a class="capitalize" href="/careers" class="capitalize">{{ trans('file.menu-top.careers') }}</a></li>
+											<li><a class="capitalize" href="blog-detail.html">Working together</a></li>
 										</ul>
 									</li>
 									<li class="dropdown">
-										<a class="dropdown-toggle capitalize" data-toggle="dropdown" href="#">{{ trans('file.menu.languages') }} <i
+										<a class="dropdown-toggle capitalize" data-toggle="dropdown" href="#">{{ trans('file.menu-top.languages') }} <i
 												class="fa fa-angle-right" aria-hidden="true"></i></a>
 										<ul class="dropdown-menu lang">
 											<li><a href="{{ url('locale/fr') }}"><img src="images/langues/fr.png"> FR</a></li>
@@ -173,68 +165,67 @@
                         <div class="row">
                             <div class="col-md-3 col-sm-6">
                                 <div class="footer-widget">
-                                    <h3 class="footer-title">Qui sommes nous</h3>
+                                    <h3 class="footer-title">{{ trans('file.menu-footer-1.header') }}</h3>
                                     <div class="footer-content">
                                         <ul class="ft-list">
                                             <li><a href="tree-plantation.html"><i class="fa fa-angle-right"
-                                                        aria-hidden="true"></i> Elite Harvest Maroc</a></li>
+                                                        aria-hidden="true"></i> {{ trans('file.menu-footer-1.item1') }}</a></li>
                                             <li><a href="garden-care.html"><i class="fa fa-angle-right"
-                                                        aria-hidden="true"></i> Notre vision</a></li>
+                                                        aria-hidden="true"></i> {{ trans('file.menu-footer-1.item2') }}</a></li>
                                             <li><a href="watering-garden.html"><i class="fa fa-angle-right"
-                                                        aria-hidden="true"></i> Notre mission</a></li>
+                                                        aria-hidden="true"></i> {{ trans('file.menu-footer-1.item3') }}</a></li>
                                             <li><a href="garden-design.html"><i class="fa fa-angle-right"
-                                                        aria-hidden="true"></i> Nos valeurs</a></li>
+                                                        aria-hidden="true"></i> {{ trans('file.menu-footer-1.item4') }}</a></li>
                                             <li><a href="gutter-repair.html"><i class="fa fa-angle-right"
-                                                        aria-hidden="true"></i> Production</a></li>
+                                                        aria-hidden="true"></i> {{ trans('file.menu-footer-1.item5') }}</a></li>
                                             <li><a href="lawn-care.html"><i class="fa fa-angle-right"
-                                                        aria-hidden="true"></i> Réseau</a></li>
+                                                        aria-hidden="true"></i> {{ trans('file.menu-footer-1.item6') }}</a></li>
                                             <li><a href="land-design.html"><i class="fa fa-angle-right"
-                                                        aria-hidden="true"></i> Ressources humaines</a></li>
+                                                        aria-hidden="true"></i> {{ trans('file.menu-footer-1.item7') }}</a></li>
                                             <li><a href="tree-surgery.html"><i class="fa fa-angle-right"
-                                                        aria-hidden="true"></i> Responsabilité sociale des
-                                                    entreprises</a></li>
+                                                        aria-hidden="true"></i> {{ trans('file.menu-footer-1.item8') }}</a></li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-3 col-sm-6">
                                 <div class="footer-widget">
-                                    <h3 class="footer-title">Services</h3>
+                                    <h3 class="footer-title">{{ trans('file.menu-footer-2.header') }}</h3>
                                     <div class="footer-content">
                                         <ul class="ft-list">
                                             <li><a href="tree-plantation.html"><i class="fa fa-angle-right"
-                                                        aria-hidden="true"></i> Société d’agriculture</a></li>
+                                                        aria-hidden="true"></i> {{ trans('file.menu-footer-2.item1') }}</a></li>
                                             <li><a href="garden-care.html"><i class="fa fa-angle-right"
-                                                        aria-hidden="true"></i> Le développement agricole</a></li>
+                                                        aria-hidden="true"></i> {{ trans('file.menu-footer-2.item2') }}</a></li>
                                             <li><a href="watering-garden.html"><i class="fa fa-angle-right"
-                                                        aria-hidden="true"></i> Gestion agricole</a></li>
+                                                        aria-hidden="true"></i> {{ trans('file.menu-footer-2.item3') }}</a></li>
                                             <li><a href="garden-design.html"><i class="fa fa-angle-right"
-                                                        aria-hidden="true"></i> Société de conseil en irrigation</a>
+                                                        aria-hidden="true"></i> {{ trans('file.menu-footer-2.item4') }}</a>
                                             </li>
                                             <li><a href="gutter-repair.html"><i class="fa fa-angle-right"
-                                                        aria-hidden="true"></i> Services de laboratoire</a></li>
+                                                        aria-hidden="true"></i> {{ trans('file.menu-footer-2.item5') }}</a></li>
                                             <li><a href="lawn-care.html"><i class="fa fa-angle-right"
-                                                        aria-hidden="true"></i> Aliments</a></li>
+                                                        aria-hidden="true"></i> {{ trans('file.menu-footer-2.item6') }}</a></li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                             <div class="col-md-3 col-sm-6">
                                 <div class="footer-widget">
-                                    <h3 class="footer-title">Info / contact</h3>
+                                    <h3 class="footer-title">{{ trans('file.menu-footer-3.header') }}</h3>
                                     <div class="footer-content">
                                         <ul class="ft-list">
                                             <li><a href="tree-plantation.html"><i class="fa fa-angle-right"
-                                                        aria-hidden="true"></i> Assurance de qualité</a></li>
+                                                        aria-hidden="true"></i> {{ trans('file.menu-footer-3.item1') }}</a></li>
                                             <li><a href="garden-care.html"><i class="fa fa-angle-right"
-                                                        aria-hidden="true"></i> Nous contacter</a></li>
+                                                        aria-hidden="true"></i> {{ trans('file.menu-footer-3.item2') }}</a></li>
                                             <li><a href="watering-garden.html"><i class="fa fa-angle-right"
-                                                        aria-hidden="true"></i> Travailler ensemble</a></li>
+                                                        aria-hidden="true"></i> {{ trans('file.menu-footer-3.item3') }}</a></li>
                                             <li><a href="garden-design.html"><i class="fa fa-angle-right"
-                                                        aria-hidden="true"></i> Carrières</a>
+                                                        aria-hidden="true"></i> {{ trans('file.menu-footer-3.item4') }}</a>
                                             </li>
                                             <li><a href="gutter-repair.html"><i class="fa fa-angle-right"
-                                                        aria-hidden="true"></i> Elite Argo LLC</a></li>
+                                                        aria-hidden="true"></i> {{ trans('file.menu-footer-3.item5') }}</a></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -244,24 +235,10 @@
                                     <h3 class="footer-title">Produits</h3>
                                     <div class="footer-content">
                                         <ul class="ins-img">
-                                            <li><a href="products.html"><img src="images/products/1 (1).jpg" alt=""></a>
+                                            @for ($i = 0; $i < 9; $i++)
+                                            <li><a href="/products"><img src="images/products/1 ({{ $i+1 }}).jpg" alt=""></a>
                                             </li>
-                                            <li><a href="products.html"><img src="images/products/1 (2).jpg" alt=""></a>
-                                            </li>
-                                            <li><a href="products.html"><img src="images/products/1 (3).jpg" alt=""></a>
-                                            </li>
-                                            <li><a href="products.html"><img src="images/products/1 (4).jpg" alt=""></a>
-                                            </li>
-                                            <li><a href="products.html"><img src="images/products/1 (5).jpg" alt=""></a>
-                                            </li>
-                                            <li><a href="products.html"><img src="images/products/1 (6).jpg" alt=""></a>
-                                            </li>
-                                            <li><a href="products.html"><img src="images/products/1 (7).jpg" alt=""></a>
-                                            </li>
-                                            <li><a href="products.html"><img src="images/products/1 (8).jpg" alt=""></a>
-                                            </li>
-                                            <li><a href="products.html"><img src="images/products/1 (9).jpg" alt=""></a>
-                                            </li>
+                                            @endfor
                                         </ul>
                                     </div>
                                 </div>
@@ -281,7 +258,7 @@
                     </div>
                 </div>
                 <div id="ftr-btm">
-                    <p>© Tous droits résérvés. Harvest Elite Maroc 2016</p>
+                    <p>© {{ trans('file.rights') }} {{ now()->year }}</p>
                 </div>
             </footer>
             <!-- Footer Section End -->
@@ -318,7 +295,8 @@
 	<script src="{{ asset('js/base-js/jquery.cookie.js') }}"></script>
 	<script src="{{ asset('js/base-js/bg-color-settings.js') }}"></script>
 	<script src="{{ asset('js/base-js/custom.js') }}"></script>
-	<script src="{{ asset('js/base-js/script.js') }}"></script>
+	{{--  <script src="{{ asset('js/base-js/script.js') }}"></script>  --}}
+	<script src="{{ asset('js/script.js') }}"></script>
 	<!-- use for map style -->
 	<script type="text/javascript"
 		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBPZ-Erd-14Vf2AoPW2Pzlxssf6-2R3PPs"></script>
