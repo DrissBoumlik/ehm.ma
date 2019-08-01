@@ -19,4 +19,12 @@ Route::get('/', 'StartController@index');
 Route::get('/json', 'StartController@getCities');
 Route::resource('products', 'ProductController');
 Route::resource('events', 'EventController');
+
+Route::get('services', 'StaticController@services');
+Route::get('quality-assurance', 'StaticController@quality_assurance');
+Route::get('contact', 'StaticController@contact');
+Route::post('contact', 'StaticController@send_email');
+Route::get('careers', 'StaticController@careers');
+Route::post('careers', 'StaticController@apply');
+
 Route::get('/locale/{locale}', 'StartController@switchLang');
