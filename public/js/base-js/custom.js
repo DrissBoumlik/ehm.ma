@@ -13,10 +13,11 @@
 		$projectimg	     = $('.project-images'),
 		$brand		     = $('.partner-slider'),
 		$contact	     = $('#contact-form'),
+		$apply           = $('#application-form'),
 		$related_product = $('.related-product'),
 		$service_grid	 = $('.service-grids'),
 		$service_grid_2	 = $('.service-grid-3'),
-		$project_grid	 = $('.project_slide'),
+		$project_grid	 = $('.infinite_slide'),
 		$testimonial	 = $('.client-testimonial2'),
 		$recent_review	 = $('.recent-review');
 
@@ -730,15 +731,106 @@
                 $('#send').attr({'disabled' : 'true', 'value' : 'Sending...' });
                 $.ajax({
                     type: "POST",
-                    url: "email.php",
+                    url: "contact",
                     data: $(form).serialize(),
-                    success: function () {
+                    success: function (response) {
                         $('#send').removeAttr('disabled').attr('value', 'Send');
                         $( "#success").slideDown( "slow" );
                         setTimeout(function() {
                         $( "#success").slideUp( "slow" );
                         }, 5000);
-                        form.reset();
+                        console.log(response);
+                        // form.reset();
+                    },
+                    error: function() {
+                        $('#send').removeAttr('disabled').attr('value', 'Send');
+                        $( "#error").slideDown( "slow" );
+                        setTimeout(function() {
+                        $( "#error").slideUp( "slow" );
+                        }, 5000);
+                    }
+                });
+                return false; // required to block normal submit since you used ajax
+            }
+
+		});
+    }
+
+    // 27-bis. Apply Form Validation
+	if($apply.length){
+
+		$apply.validate({  //#contact-form contact form id
+			rules: {
+				first_name: {
+					required: true    // Field name here
+                },
+                last_name: {
+					required: true    // Field name here
+				},
+				email: {
+					required: true, // Field name here
+					email: true
+                },
+                phone: {
+					required: true    // Field name here
+				},
+				job: {
+					required: true
+                },
+                diploma: {
+					required: true    // Field name here
+                },
+                years_exp: {
+					required: true    // Field name here
+                },
+                upload_cv: {
+					required: true    // Field name here
+                },
+                upload_letter: {
+					required: true    // Field name here
+				},
+				application_message: {
+					required: true
+				}
+			},
+
+			messages: {
+                first_name: "Please enter your First Name", //Write here your error message that you want to show in contact form
+                last_name: "Please enter your Last Name", //Write here your error message that you want to show in contact form
+                email: "Please enter valid Email", //Write here your error message that you want to show in contact form
+                phone: "Please enter valid Phone", //Write here your error message that you want to show in contact form
+                job: "Please enter the job", //Write here your error message that you want to show in contact form
+                diploma: "Please enter your diploma", //Write here your error message that you want to show in contact form
+                years_exp: "Please enter a valid number", //Write here your error message that you want to show in contact form
+                upload_cv: "Please upload your cv", //Write here your error message that you want to show in contact form
+                upload_letter: "Please upload your letter", //Write here your error message that you want to show in contact form
+				application_: "Please write your Message" //Write here your error message that you want to show in contact form
+            },
+
+            submitHandler: function (form) {
+
+                var formdata = false;
+                console.log(window.FormData);
+                if (window.FormData){
+                    formdata = new FormData(form);
+                }
+                console.log(formdata);
+                // return;
+                $('#send').attr({'disabled' : 'true', 'value' : 'Sending...' });
+                $.ajax({
+                    type: "POST",
+                    url: "careers",
+                    data: formdata, //$(form).serialize(),
+                    processData: false,
+                    contentType: false,
+                    success: function (response) {
+                        $('#send').removeAttr('disabled').attr('value', 'Send');
+                        $( "#success").slideDown( "slow" );
+                        setTimeout(function() {
+                        $( "#success").slideUp( "slow" );
+                        }, 5000);
+                        console.log(response);
+                        // form.reset();
                     },
                     error: function() {
                         $('#send').removeAttr('disabled').attr('value', 'Send');
