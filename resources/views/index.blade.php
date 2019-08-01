@@ -2,7 +2,7 @@
 
 
 @section('title')
-    {{ ucfirst(trans('file.menu.home')) }}
+    {{ ucfirst(trans('file.menu-top.home')) }}
 @endsection
 
 @section('content')
@@ -81,10 +81,10 @@
     <div class="container-fluid">
         <div class="row">
             <div class="">
-                <div class="project_slide">
+                <div class="infinite_slide">
                     <div class="item">
-                        <div class="project-grid">
-                            <div class="project-img">
+                        <div class="item-grid">
+                            <div class="item-img">
                                 <img src="images/products/1 (1).jpg" alt="">
                                 <div class="overlay"><a href="#" class="btn btn-default">grenade</a>
                                 </div>
@@ -92,8 +92,8 @@
                         </div>
                     </div>
                     <div class="item">
-                        <div class="project-grid">
-                            <div class="project-img">
+                        <div class="item-grid">
+                            <div class="item-img">
                                 <img src="images/products/1 (2).jpg" alt="">
                                 <div class="overlay"><a href="#" class="btn btn-default">poire</a>
                                 </div>
@@ -101,8 +101,8 @@
                         </div>
                     </div>
                     <div class="item">
-                        <div class="project-grid">
-                            <div class="project-img">
+                        <div class="item-grid">
+                            <div class="item-img">
                                 <img src="images/products/1 (3).jpg" alt="">
                                 <div class="overlay"><a href="#" class="btn btn-default">myrtille</a>
                                 </div>
@@ -110,8 +110,8 @@
                         </div>
                     </div>
                     <div class="item">
-                        <div class="project-grid">
-                            <div class="project-img">
+                        <div class="item-grid">
+                            <div class="item-img">
                                 <img src="images/products/1 (4).jpg" alt="">
                                 <div class="overlay"><a href="#" class="btn btn-default">raisins</a>
                                 </div>
@@ -119,8 +119,8 @@
                         </div>
                     </div>
                     <div class="item">
-                        <div class="project-grid">
-                            <div class="project-img">
+                        <div class="item-grid">
+                            <div class="item-img">
                                 <img src="images/products/1 (5).jpg" alt="">
                                 <div class="overlay"><a href="#" class="btn btn-default">kaki</a>
                                 </div>
@@ -128,8 +128,8 @@
                         </div>
                     </div>
                     <div class="item">
-                        <div class="project-grid">
-                            <div class="project-img">
+                        <div class="item-grid">
+                            <div class="item-img">
                                 <img src="images/products/1 (6).jpg" alt="">
                                 <div class="overlay"><a href="#" class="btn btn-default">figue</a>
                                 </div>
@@ -137,8 +137,8 @@
                         </div>
                     </div>
                     <div class="item">
-                        <div class="project-grid">
-                            <div class="project-img">
+                        <div class="item-grid">
+                            <div class="item-img">
                                 <img src="images/products/1 (7).jpg" alt="">
                                 <div class="overlay"><a href="#" class="btn btn-default">pomme</a>
                                 </div>
@@ -146,8 +146,8 @@
                         </div>
                     </div>
                     <div class="item">
-                        <div class="project-grid">
-                            <div class="project-img">
+                        <div class="item-grid">
+                            <div class="item-img">
                                 <img src="images/products/1 (8).jpg" alt="">
                                 <div class="overlay"><a href="#" class="btn btn-default">cerise</a>
                                 </div>
@@ -155,8 +155,8 @@
                         </div>
                     </div>
                     <div class="item">
-                        <div class="project-grid">
-                            <div class="project-img">
+                        <div class="item-grid">
+                            <div class="item-img">
                                 <img src="images/products/1 (9).jpg" alt="">
                                 <div class="overlay"><a href="#" class="btn btn-default">prune</a>
                                 </div>
