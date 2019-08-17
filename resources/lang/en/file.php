@@ -12,6 +12,7 @@ return [
         'events' => 'events',
         'contact-us' => 'contact us',
         'careers' => 'careers',
+        'working-together' => 'working together',
         'languages' => 'languages',
     ],
     'menu-footer-1' => [
@@ -162,5 +163,47 @@ return [
         'upload-letter' => 'Upload Letter',
         'message' => 'Message',
         'send-btn' => 'Send'
-    ]
+    ],
+    'working-together-form' => [
+        'supplier-id-section' => [
+            'header' => 'supplier identification',
+            'company-name' => 'Company name',
+            'full-address' => 'Full address',
+            'social-security-number' => 'Social security',
+            'patent' => 'Patent',
+            'id-fiscal-number' => 'ID fiscale',
+            'trade-register-number' => 'Trade register',
+            'website' => 'Website',
+        ],
+        'general-data-section' => [
+            'header' => 'general data',
+            'creation-date' => 'Creation Date',
+            'emplouees-count' => 'Number of employees',
+            'main-activity' => 'Main activity',
+            'related-activities' => 'Related activities',
+            'turnover' => 'Turnover',
+            'key-customers' => '3 Key customers and their share in your total turnover',
+            'customer' => 'Customer',
+            'city' => 'City',
+            'share-turnover' => 'Share/Turnover',
+            'quality-references' => 'Quality and references',
+            'other-certification' => 'Other certification',
+            'upload-references' => 'Upload your references(PDF)',
+        ],
+        'communication-section' => [
+            'header' => 'communication',
+            'manager-name' => 'Manager name',
+            'manager-phone ' => 'Manager phone',
+            'manager-email' => 'Manager email',
+            'land-phone' => 'Land phone',
+        ],
+        'motivation-section' => [
+            'header' => 'motivation',
+            'purchasing family' => 'Please specify the purchasing family that interests you',
+            'how-found-ehm' => 'How did you discover EHM',
+            'why-join' => 'Please explain briefly why you would like to become one of our suppliers',
+            'attach-file' => 'You can attach your file here below if wished',
+            'btn-send' => 'Submit',
+        ]
+    ],
 ];

@@ -132,7 +132,7 @@
 										<ul class="dropdown-menu">
 											<li><a class="capitalize" href="/contact">{{ trans('file.menu-top.contact-us') }}</a></li>
 											<li><a class="capitalize" href="/careers" class="capitalize">{{ trans('file.menu-top.careers') }}</a></li>
-											<li><a class="capitalize" href="blog-detail.html">Working together</a></li>
+											<li><a class="capitalize" href="/working-together">{{ trans('file.menu-top.working-together') }}</a></li>
 										</ul>
 									</li>
 									<li class="dropdown">

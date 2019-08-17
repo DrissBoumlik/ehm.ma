@@ -51,4 +51,9 @@ class StaticController extends Controller
 
         return "Email sent Successfully, Thank you";
     }
+
+    public function working_together()
+    {
+        return view('static_pages.working-together');
+    }
 }

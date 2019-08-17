@@ -12,6 +12,7 @@ return [
         'events' => 'événements',
         'contact-us' => 'contactez-nous',
         'careers' => 'carrières',
+        'working-together' => 'travailler ensemble',
         'languages' => 'langues'
     ],
     'menu-footer-1' => [

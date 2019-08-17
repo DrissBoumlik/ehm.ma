@@ -25,25 +25,25 @@
                         @csrf
                         <div class="row">
                             <div class="form-group col-md-6 col-sm-6">
-                                <input value="name" class="form-control" id="first-name" type="text" name="first_name" placeholder="{{ trans('file.career-form.first-name') }}" />
+                                <input class="form-control" id="first-name" type="text" name="first_name" placeholder="{{ trans('file.career-form.first-name') }}" />
                             </div>
                             <div class="form-group col-md-6 col-sm-6">
-                                <input value="name" class="form-control" id="last-name" type="text" name="last_name" placeholder="{{ trans('file.career-form.last-name') }}" />
+                                <input class="form-control" id="last-name" type="text" name="last_name" placeholder="{{ trans('file.career-form.last-name') }}" />
                             </div>
                             <div class="form-group col-md-6 col-sm-6">
-                                <input value="kk@kk.kk" class="form-control" id="email" type="text" name="email" placeholder="{{ trans('file.career-form.email') }}" />
+                                <input class="form-control" id="email" type="text" name="email" placeholder="{{ trans('file.career-form.email') }}" />
                             </div>
                             <div class="form-group col-md-6 col-sm-6">
-                                <input value="06554597" class="form-control" id="phone" type="text" name="phone" placeholder="{{ trans('file.career-form.phone') }}" />
+                                <input class="form-control" id="phone" type="text" name="phone" placeholder="{{ trans('file.career-form.phone') }}" />
                             </div>
                             <div class="form-group col-md-4 col-sm-4">
-                                <input value="job" class="form-control" id="job" type="text" name="job" placeholder="{{ trans('file.career-form.job') }}" />
+                                <input class="form-control" id="job" type="text" name="job" placeholder="{{ trans('file.career-form.job') }}" />
                             </div>
                             <div class="form-group col-md-4 col-sm-4">
-                                <input value="diploma" class="form-control" id="diploma" type="text" name="diploma" placeholder="{{ trans('file.career-form.diploma') }}" />
+                                <input class="form-control" id="diploma" type="text" name="diploma" placeholder="{{ trans('file.career-form.diploma') }}" />
                             </div>
                             <div class="form-group col-md-4 col-sm-4">
-                                <input value="5" class="form-control" id="years-exp" type="text" name="years_exp" placeholder="{{ trans('file.career-form.years-exp') }}" />
+                                <input class="form-control" id="years-exp" type="text" name="years_exp" placeholder="{{ trans('file.career-form.years-exp') }}" />
                             </div>
                             <div class="form-group col-md-6 col-sm-6">
                                 <div class="custom-file">
@@ -58,8 +58,7 @@
                                 </div>
                             </div>
                             <div class="form-group col-md-12 col-sm-12">
-                                <textarea class="form-control message" id="application_message" name="application_message" placeholder="{{ trans('file.career-form.message') }}">hi there
-                                </textarea>
+                                <textarea class="form-control message" id="application_message" name="application_message" placeholder="{{ trans('file.career-form.message') }}"></textarea>
                             </div>
                             <div class="form-group col-md-12 col-sm-6">
                                 <input class="btn btn-primary" id="send" type="submit" value="send" />
