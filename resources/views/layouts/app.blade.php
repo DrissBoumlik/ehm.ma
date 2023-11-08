@@ -80,7 +80,7 @@
 									data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span
 										class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span
 										class="icon-bar"></span> <span class="icon-bar"></span> </button>
-								<a class="navbar-brand" href="/"><img class="nav-logo"
+								<a class="navbar-brand" href="{{ \URL::to('/')}}"><img class="nav-logo"
 										src="images/logo/logo1.png" alt=""><img class="nav-logo"
 										src="images/logo/logo1.png" alt=""></a>
 							</div>
