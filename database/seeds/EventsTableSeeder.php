@@ -25,7 +25,7 @@ class EventsTableSeeder extends Seeder
             $e->description_en = $faker->text(200);
             $e->description_ar = $faker->text(200);
             $e->start_date = $faker->date();
-            $e->image = 'http://www.ehm.ma/wp-content/uploads/2017/06/3-600x403.jpg';
+            $e->image = array_random(['/images/events/image (1).png', '/images/events/image (2).png', '/images/events/image (3).png']);
             $e->save();
         }
     }

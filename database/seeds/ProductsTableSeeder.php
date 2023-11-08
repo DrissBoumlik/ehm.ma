@@ -12,7 +12,7 @@ class ProductsTableSeeder extends Seeder
      */
     public function run()
     {
-        $products = json_decode(file_get_contents(storage_path('app\public') . '\json\products.json', true))->products;
+        // $products = json_decode(file_get_contents(storage_path('app\public') . '\json\products.json', true))->products;
 
         $cities = [
             'KENITRA',
