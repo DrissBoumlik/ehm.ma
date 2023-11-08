@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -15,17 +17,17 @@
 //     return view('welcome');
 // });
 
-Route::get('/', 'StartController@index');
-Route::get('/json', 'StartController@getCities');
-Route::resource('products', 'ProductController');
-Route::resource('events', 'EventController');
+Route::get('/', [\App\Http\Controllers\StartController::class, 'index']);
+Route::get('/json', [\App\Http\Controllers\StartController::class, 'getCities']);
+Route::resource('products', \App\Http\Controllers\ProductController::class);
+Route::resource('events', \App\Http\Controllers\EventController::class);
 
-Route::get('services', 'StaticController@services');
-Route::get('quality-assurance', 'StaticController@quality_assurance');
-Route::get('contact', 'StaticController@contact');
-Route::get('working-together', 'StaticController@working_together');
-Route::post('contact', 'StaticController@send_email');
-Route::get('careers', 'StaticController@careers');
-Route::post('careers', 'StaticController@apply');
+Route::get('services', [\App\Http\Controllers\StaticController::class, 'services']);
+Route::get('quality-assurance', [\App\Http\Controllers\StaticController::class, 'quality_assurance']);
+Route::get('contact', [\App\Http\Controllers\StaticController::class, 'contact']);
+Route::get('working-together', [\App\Http\Controllers\StaticController::class, 'working_together']);
+Route::post('contact', [\App\Http\Controllers\StaticController::class, 'send_email']);
+Route::get('careers', [\App\Http\Controllers\StaticController::class, 'careers']);
+Route::post('careers', [\App\Http\Controllers\StaticController::class, 'apply']);
 
-Route::get('/locale/{locale}', 'StartController@switchLang');
+Route::get('/locale/{locale}', [\App\Http\Controllers\StartController::class, 'switchLang']);

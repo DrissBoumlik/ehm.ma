@@ -44,9 +44,9 @@
                                         <div class="port-content">
                                             <div class="glry-hvr-txt">
                                                 {{--  <a href="single-project.html">  --}}
-                                                    <h4 class="box-title uppercase">{{ str_limit($product->name . ' / ' . $product->city, $limit = 20) }}</h4>
+                                                    <h4 class="box-title uppercase">{{ \Str::limit($product->name . ' / ' . $product->city, $limit = 20) }}</h4>
                                                 {{--  </a>  --}}
-                                                <p>{{ str_limit($product->description, $limit = 60) }}</p>
+                                                <p>{{ \Str::limit($product->description, $limit = 60) }}</p>
                                             </div>
                                         </div>
                                     </div>

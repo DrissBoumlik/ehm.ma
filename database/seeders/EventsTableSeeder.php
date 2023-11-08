@@ -1,8 +1,12 @@
 <?php
 
+namespace Database\Seeders;
+
 use Illuminate\Database\Seeder;
-use App\Event;
+use App\Models\Event;
 use Faker\Generator as Faker;
+use Illuminate\Support\Arr;
+
 class EventsTableSeeder extends Seeder
 {
     /**
@@ -25,7 +29,7 @@ class EventsTableSeeder extends Seeder
             $e->description_en = $faker->text(200);
             $e->description_ar = $faker->text(200);
             $e->start_date = $faker->date();
-            $e->image = array_random(['/images/events/image (1).png', '/images/events/image (2).png', '/images/events/image (3).png']);
+            $e->image = Arr::random(['/images/events/image (1).png', '/images/events/image (2).png', '/images/events/image (3).png']);
             $e->save();
         }
     }

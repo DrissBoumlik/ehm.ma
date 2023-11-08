@@ -25,8 +25,8 @@
                     </div>
                     <div class="card-body">
                         <span class="card-date mb-10 block">{{ (new Carbon\Carbon($event->start_date))->format('F d, Y') }}</span>
-                        <h5 class="card-title uppercase">{{ str_limit($event->title, $limit = 20) }}</h5>
-                        <p class="card-text">{{ str_limit($event->description, $limit = 60) }}</p>
+                        <h5 class="card-title uppercase">{{ \Str::limit($event->title, $limit = 20) }}</h5>
+                        <p class="card-text">{{ \Str::limit($event->description, $limit = 60) }}</p>
                     </div>
                 </div>
             </a>
