@@ -37,7 +37,7 @@
                         <div class="default-portfolio-item" data-toggle="modal" data-target="#modal-{{ $loop->index }}">
                             <div class="inner-box text-center margin-bottom-30">
                                 <!--Image Box-->
-                                <figure class="image-box"><img src="{{ $product->image }}" alt="">
+                                <figure class="image-box"><img src="{{ \URL::to($product->image) }}" alt="">
                                 </figure>
                                 <div class="overlay-box">
                                     <div class="inner-content">

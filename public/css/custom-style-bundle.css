@@ -462,19 +462,19 @@
 }
 
 .feature .item:first-child {
-  background-image: url(/images/slider/1.jpg);
+  background-image: url(../images/slider/1.jpg);
 }
 
 .feature .item:nth-child(2) {
-  background-image: url(/images/slider/2.jpg);
+  background-image: url(../images/slider/2.jpg);
 }
 
 .feature .item:nth-child(3) {
-  background-image: url(/images/slider/5.png);
+  background-image: url(../images/slider/5.png);
 }
 
 .feature .item:last-child {
-  background-image: url(/images/slider/1.png);
+  background-image: url(../images/slider/1.png);
 }
 
 .feature .carousel-indicators {
@@ -543,7 +543,7 @@
 }
 
 .header-img {
-  background-image: url(/images/Business-operations.jpg);
+  background-image: url(images/Business-operations.jpg);
   margin-top: 90px;
   padding: 0;
   height: 400px;

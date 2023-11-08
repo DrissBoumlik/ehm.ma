@@ -48,17 +48,20 @@ return [
             'slide-0' => [
                 'header' => 'Elite Harvest 0',
                 'text' => 'We inspire everyone to reach the ultimate goal of « HEALTHY SOCIETY »',
-                'button' => 'see more'
+                'button' => 'see more',
+
             ],
             'slide-1' => [
                 'header' => 'Elite Harvest 1',
                 'text' => 'We inspire everyone to reach the ultimate goal of « HEALTHY SOCIETY »',
-                'button' => 'see more'
+                'button' => 'see more',
+
             ],
             'slide-2' => [
                 'header' => 'Elite Harvest 2',
                 'text' => 'We inspire everyone to reach the ultimate goal of « HEALTHY SOCIETY »',
-                'button' => 'see more'
+                'button' => 'see more',
+
             ]
         ],
         'about-us' => [
