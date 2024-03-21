@@ -279,8 +279,8 @@
                             </div>
                             <div class="service-grid-txt">
                                 <span>{{ (new Carbon\Carbon($event->start_date))->format('F d, Y') }}</span>
-                                <h3 class="sec-title uppercase"><a href="tree-plantation.html">{{ str_limit($event->title, $limit = 20) }}</a></h3>
-                                <p>{{ str_limit($event->description, $limit = 60) }}</p>
+                                <h3 class="sec-title uppercase"><a href="tree-plantation.html">{{ \Str::limit($event->title, $limit = 20) }}</a></h3>
+                                <p>{{ \Str::limit($event->description, $limit = 60) }}</p>
                             </div>
                         </div>
                     </div>

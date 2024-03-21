@@ -24,14 +24,14 @@
             </div>
             <div class="col-md-6">
                 <div class="image">
-                    <img src="http://www.ehm.ma/wp-content/uploads/2016/11/corporate-farming.jpg" alt="">
+                    <img src="{{ asset('/images/our_service/1.png') }}" alt="">
                 </div>
             </div>
         </div>
         <div class="row mb-50">
             <div class="col-md-6">
                 <div class="image">
-                    <img src="http://www.ehm.ma/wp-content/uploads/2016/11/farm-development.jpg" alt="">
+                    <img src="{{ asset('/images/our_service/2.png') }}" alt="">
                 </div>
             </div>
             <div class="col-md-6">
@@ -50,7 +50,7 @@
             </div>
             <div class="col-md-6">
                 <div class="image">
-                    <img src="http://www.ehm.ma/wp-content/uploads/2016/11/farm-management-1.jpg" alt="">
+                    <img src="{{ asset('/images/our_service/3.png') }}" alt="">
                 </div>
             </div>
         </div>

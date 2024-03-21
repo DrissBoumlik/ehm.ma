@@ -80,7 +80,7 @@
 									data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span
 										class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span
 										class="icon-bar"></span> <span class="icon-bar"></span> </button>
-								<a class="navbar-brand" href="/"><img class="nav-logo"
+								<a class="navbar-brand" href="{{ \URL::to('/')}}"><img class="nav-logo"
 										src="images/logo/logo1.png" alt=""><img class="nav-logo"
 										src="images/logo/logo1.png" alt=""></a>
 							</div>
@@ -89,7 +89,7 @@
 							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 								<ul class="navigation nav navbar-nav navbar-right">
 									<li class="dropdown">
-										<a class="dropdown-toggle capitalize" href="/">{{ trans('file.menu-top.home') }}</a>
+										<a class="dropdown-toggle capitalize" href="{{ \URL::to('/') }}">{{ trans('file.menu-top.home') }}</a>
 									</li>
 									<li class="dropdown">
 										<a class="dropdown-toggle capitalize" data-toggle="dropdown" href="#">{{ trans('file.menu-top.about-us') }} <i
@@ -118,21 +118,21 @@
 										</ul>
 									</li>
 									<li class="dropdown">
-										<a class="capitalize" href="/products">{{ trans('file.menu-top.products') }}</a>
+										<a class="capitalize" href="{{ \URL::to('products') }}">{{ trans('file.menu-top.products') }}</a>
 									</li>
 									<li class="dropdown">
-										<a class="capitalize" href="/quality-assurance">{{ trans('file.menu-top.quality-assurances') }}</a>
+										<a class="capitalize" href="{{ \URL::to('quality-assurance') }}">{{ trans('file.menu-top.quality-assurances') }}</a>
 									</li>
 									<li class="dropdown"><a class="dropdown-toggle capitalize"
-											href="/events">{{ trans('file.menu-top.events') }}</a>
+											href="{{ \URL::to('events') }}">{{ trans('file.menu-top.events') }}</a>
 									</li>
 									<li class="dropdown"><a class="dropdown-toggle capitalize" data-toggle="dropdown"
 											href="#">{{ trans('file.menu-top.contact-us') }} <i class="fa fa-angle-right"
 												aria-hidden="true"></i></a>
 										<ul class="dropdown-menu">
-											<li><a class="capitalize" href="/contact">{{ trans('file.menu-top.contact-us') }}</a></li>
-											<li><a class="capitalize" href="/careers" class="capitalize">{{ trans('file.menu-top.careers') }}</a></li>
-											<li><a class="capitalize" href="/working-together">{{ trans('file.menu-top.working-together') }}</a></li>
+											<li><a class="capitalize" href="{{ \URL::to('contact') }}">{{ trans('file.menu-top.contact-us') }}</a></li>
+											<li><a class="capitalize" href="{{ \URL::to('careers') }}" class="capitalize">{{ trans('file.menu-top.careers') }}</a></li>
+											<li><a class="capitalize" href="{{ \URL::to('working-together') }}">{{ trans('file.menu-top.working-together') }}</a></li>
 										</ul>
 									</li>
 									<li class="dropdown">
